@@ -1,32 +1,78 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#06384a">
-<title>BioData | Enciclopedia Interactiva de la Vida</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#081b2a">
+<meta name="description" content="BioData: plataforma educativa interactiva sobre organismos, genética, química y tecnología.">
+<title>BioData V2 | Explora la ciencia</title>
 <link rel="stylesheet" href="css/styles.css">
-<script defer src="js/data.js"></script><script defer src="js/organismos.js"></script>
-<script defer src="js/tabla-periodica.js"></script><script defer src="js/celulas-adn.js"></script>
-<script defer src="js/base-datos.js"></script><script defer src="js/desafios.js"></script><script defer src="js/laboratorio.js"></script><script defer src="js/app.js"></script>
+<link rel="stylesheet" href="css/v2.css">
+<script defer src="js/data.js"></script>
+<script defer src="js/organismos.js"></script>
+<script defer src="js/tabla-periodica.js"></script>
+<script defer src="js/celulas-adn.js"></script>
+<script defer src="js/base-datos.js"></script>
+<script defer src="js/desafios.js"></script>
+<script defer src="js/laboratorio.js"></script>
+<script defer src="js/app.js"></script>
 </head>
 <body>
-<header class="hero"><div class="brand-icon">🧬</div><div><h1>Bio<span>Data</span></h1><h2>Enciclopedia Interactiva de la Vida</h2><p>Explora cómo se conectan los organismos, la química, la genética y el mundo que nos rodea.</p></div><div class="hero-leaf">🌿</div></header>
-<div class="layout">
-<aside class="sidebar"><div class="side-logo">🧬 BioData</div><label for="global-search">Buscar en BioData</label><input id="global-search" placeholder="Organismo, elemento o tema…"><nav>
-<button class="nav-item active" data-view="inicio">⌂ Inicio</button><button class="nav-item" data-view="organismos">🌿 Organismos</button><button class="nav-item" data-view="tabla">⚗ Tabla periódica</button><button class="nav-item" data-view="celulas">🧬 Células, ADN y cromosomas</button><button class="nav-item" data-view="base-datos">▤ Base de datos</button><button class="nav-item" data-view="administracion">⚙ Administración</button><button class="nav-item" data-view="desafio">★ Modo desafío</button><button class="nav-item" data-view="laboratorio">🔬 Laboratorio</button></nav><p class="side-note">Proyecto escolar<br><b>Programación + Biología</b><br>Prototipo demostrativo</p></aside>
-<main>
-<section class="view active" id="view-inicio"><div class="welcome"><div><span class="eyebrow">CIENCIA · TECNOLOGÍA · VIDA</span><h2>Descubre el mundo<br>que vive a tu alrededor.</h2><p>Aprende con fichas, diagramas, elementos químicos y retos interactivos.</p><button class="button light" data-go="organismos">Explorar enciclopedia →</button></div><div class="welcome-art">🌱<br>🧬<br>⚗️</div></div>
-<div class="section-title"><div><span class="eyebrow">EXPLORA POR TEMA</span><h2>Áreas de BioData</h2></div><small>Selecciona una tarjeta para entrar</small></div>
-<div class="module-grid">
-<button class="module-card green" data-go="organismos"><span>🌿</span><b>Organismos biológicos</b><small>Plantas, animales, hongos y microorganismos.</small><em>Abrir módulo ↗</em></button>
-<button class="module-card violet" data-go="tabla"><span>⚗️</span><b>Tabla periódica</b><small>Explora propiedades y usos de los elementos.</small><em>Abrir módulo ↗</em></button>
-<button class="module-card cyan" data-go="celulas"><span>🧬</span><b>Células, ADN y cromosomas</b><small>Conoce estructuras y funciones celulares.</small><em>Abrir módulo ↗</em></button>
-<button class="module-card orange" data-go="base-datos"><span>🗄️</span><b>Base de datos</b><small>Observa cómo se organiza la información.</small><em>Abrir módulo ↗</em></button>
-<button class="module-card blue" data-go="administracion"><span>📊</span><b>Administración</b><small>Procesos, organización y decisiones.</small><em>Abrir módulo ↗</em></button>
-<button class="module-card pink" data-go="desafio"><span>🎯</span><b>Modo desafío</b><small>Comprueba lo aprendido con preguntas.</small><em>Jugar ahora ↗</em></button></div>
-<button class="module-card cyan laboratory-shortcut" data-go="laboratorio"><span>🔬</span><b>Laboratorio interactivo</b><small>Experimenta con genética, fotosíntesis y consulta el glosario científico.</small><em>Experimentar ↗</em></button><div class="callout">💡 <div><b>Aprender es explorar</b><p>Entra a cada módulo y selecciona opciones para desplegar información adicional.</p></div></div></section>
-
-<section class="view" id="view-organismos"><div class="page-heading"><span class="eyebrow">BIOLOGÍA</span><h2>Organismos biológicos</h2><p>Busca un organismo y abre su ficha para conocer sus características.</p></div>
+<div class="app-shell">
+  <aside class="sidebar app-sidebar" id="app-sidebar" aria-label="Navegación principal">
+    <div class="sidebar-brand"><span class="brand-mark">✳</span><div><strong>Bio<span>Data</span></strong><small>SCIENCE EXPERIENCE</small></div><span class="version-label">V2</span></div>
+    <div class="sidebar-label">EXPLORAR</div>
+    <nav id="primary-nav" aria-label="Módulos">
+      <button class="nav-item active" data-view="inicio"><span class="nav-icon">◫</span> Inicio <span class="nav-chevron">↗</span></button>
+      <button class="nav-item" data-view="organismos"><span class="nav-icon">🌿</span> Organismos</button>
+      <button class="nav-item" data-view="tabla"><span class="nav-icon">⚛</span> Tabla periódica</button>
+      <button class="nav-item" data-view="celulas"><span class="nav-icon">🧬</span> Células y ADN</button>
+      <button class="nav-item" data-view="laboratorio"><span class="nav-icon">⚗</span> Laboratorio <span class="nav-new">NUEVO</span></button>
+      <div class="sidebar-label inside">APLICAR</div>
+      <button class="nav-item" data-view="desafio"><span class="nav-icon">◎</span> Desafíos</button>
+      <button class="nav-item" data-view="base-datos"><span class="nav-icon">▤</span> Base de datos</button>
+      <button class="nav-item" data-view="administracion"><span class="nav-icon">▦</span> Administración</button>
+      <button class="nav-item" data-view="ruta"><span class="nav-icon">♧</span> Mi aprendizaje</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="side-progress-title"><span>Tu exploración</span><strong id="side-progress-value">0%</strong></div>
+      <div class="side-progress-bar"><span id="side-progress-fill"></span></div>
+      <p id="side-progress-caption">Comienza tu primera actividad</p>
+      <div class="side-project-note"><span class="online-dot"></span> DEMO EDUCATIVA <small>CONALEP · Muestra del Quehacer</small></div>
+    </div>
+  </aside>
+  <div class="app-workspace">
+    <header class="app-topbar">
+      <div class="top-left"><button class="mobile-menu-button" id="mobile-menu" aria-label="Abrir menú" aria-controls="app-sidebar" aria-expanded="false">☰</button><div class="breadcrumb">PLATAFORMA / <strong id="current-view-label">Inicio</strong></div></div>
+      <div class="top-actions"><div class="quick-search"><label class="sr-only" for="global-search">Buscar en BioData</label><span aria-hidden="true">⌕</span><input id="global-search" type="search" autocomplete="off" placeholder="Buscar en BioData..." aria-label="Buscar organismos, elementos y temas"><kbd>/</kbd></div><button id="theme-toggle" class="icon-action" aria-label="Cambiar tema" title="Cambiar tema">☾</button><span class="top-avatar" title="Experiencia educativa">BD</span></div>
+      <div class="search-results" id="search-results" hidden aria-label="Resultados de búsqueda"></div>
+    </header>
+    <main id="app-main">
+      <section class="view active" id="view-inicio" aria-label="Inicio">
+        <div class="v2-hero">
+          <div class="v2-hero-copy"><span class="hero-kicker"><span class="online-dot"></span> BIENVENIDO A BIODATA 2.0</span><h1>La ciencia se<br><em>descubre explorando.</em></h1><p>Conoce la vida desde sus células hasta los ecosistemas. Investiga, experimenta y desafía lo que sabes en una experiencia interactiva.</p><div class="hero-buttons"><button class="button hero-primary" data-go="organismos">Empezar a explorar <span>↗</span></button><button class="button hero-secondary" data-go="laboratorio">Abrir laboratorio ↗</button></div><div class="hero-footnote"><span>✦</span> Ciencia · Tecnología · Creatividad <span class="footnote-divider">|</span> Proyecto educativo</div></div>
+          <div class="v2-hero-visual" aria-hidden="true"><div class="orbit-ring orbit-one"></div><div class="orbit-ring orbit-two"></div><div class="orbit-ring orbit-three"></div><div class="central-orb"><svg viewBox="0 0 200 200" role="img" aria-label="Ilustración de ADN"><defs><linearGradient id="dnaGradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b4ffd9"/><stop offset="1" stop-color="#4de0ee"/></linearGradient></defs><g fill="none" stroke="url(#dnaGradient)" stroke-width="6" stroke-linecap="round"><path d="M65 20 C155 55 45 135 135 180"/><path d="M135 20 C45 55 155 135 65 180"/></g><g stroke="#b0eaf4" stroke-width="4" opacity=".7"><line x1="80" y1="29" x2="120" y2="29"/><line x1="59" y1="55" x2="141" y2="55"/><line x1="77" y1="80" x2="123" y2="80"/><line x1="79" y1="108" x2="121" y2="108"/><line x1="59" y1="135" x2="141" y2="135"/><line x1="75" y1="162" x2="125" y2="162"/></g></svg></div><div class="orbit-tag tag-one">🧪 <span>Química</span></div><div class="orbit-tag tag-two">🌿 <span>Biología</span></div><div class="orbit-tag tag-three">⚛ <span>Genética</span></div><span class="orbit-spark spark-one">✦</span><span class="orbit-spark spark-two">✧</span></div>
+        </div>
+        <div class="stat-grid" aria-label="Resumen de BioData"><div class="stat-card"><span class="stat-icon green">🌱</span><div><strong id="stat-organisms">—</strong><small>Organismos</small></div><span class="stat-arrow">↗</span></div><div class="stat-card"><span class="stat-icon blue">⚛</span><div><strong id="stat-elements">—</strong><small>Elementos químicos</small></div><span class="stat-arrow">↗</span></div><div class="stat-card"><span class="stat-icon purple">⚗</span><div><strong>2</strong><small>Simulaciones</small></div><span class="stat-arrow">↗</span></div><div class="stat-card"><span class="stat-icon amber">◎</span><div><strong id="stat-questions">—</strong><small>Preguntas para practicar</small></div><span class="stat-arrow">↗</span></div></div>
+        <div class="section-title home-section-heading"><div><span class="eyebrow">APRENDE A TU RITMO</span><h2>Explora por áreas</h2></div><small>Elige un módulo para comenzar <span class="right-arrow">↘</span></small></div>
+        <div class="module-grid v2-module-grid">
+          <button class="module-card green" data-go="organismos"><span>🌿</span><b>Organismos biológicos</b><small>Descubre animales, plantas, hongos y microorganismos.</small><em>Explorar área <span>↗</span></em></button>
+          <button class="module-card violet" data-go="tabla"><span>⚛</span><b>Tabla periódica</b><small>Descubre elementos y su importancia para la vida.</small><em>Explorar área <span>↗</span></em></button>
+          <button class="module-card cyan" data-go="celulas"><span>🧬</span><b>Células y genética</b><small>Explora el ADN, los orgánulos y los cromosomas.</small><em>Explorar área <span>↗</span></em></button>
+          <button class="module-card orange" data-go="laboratorio"><span>🧪</span><b>Laboratorio virtual</b><small>Experimenta con genética y fotosíntesis.</small><em>Probar simuladores <span>↗</span></em></button>
+          <button class="module-card blue" data-go="base-datos"><span>▤</span><b>Bases de datos</b><small>Conoce las tablas y cómo se relacionan los datos.</small><em>Explorar área <span>↗</span></em></button>
+          <button class="module-card pink" data-go="administracion"><span>▦</span><b>Gestión científica</b><small>Comprende cómo se organiza un proyecto.</small><em>Explorar área <span>↗</span></em></button>
+        </div>
+        <div class="dashboard-bottom"><article class="feature-panel"><div><span class="eyebrow">EL RETO DE HOY</span><h2>¿Cuánto sabes realmente?</h2><p>Resuelve preguntas sobre genética, química y seres vivos. Aprende a partir de tus respuestas.</p><button class="button feature-button" data-go="desafio">Comenzar desafío ↗</button></div><div class="feature-art" aria-hidden="true">✳<span>?</span></div></article><article class="journey-panel"><div class="journey-header"><span class="eyebrow">TU RECORRIDO</span><span class="journey-icon">✦</span></div><h2>Tu viaje científico</h2><p>Registra los módulos que has explorado. El avance se guarda únicamente en este navegador.</p><div class="journey-meter"><span id="home-progress-fill"></span></div><div class="journey-bottom"><strong id="home-progress-value">0 de 7 áreas</strong><button data-go="ruta">Ver mi avance ↗</button></div></article></div>
+        <div class="ai-prep"><div class="ai-prep-symbol">✧</div><div><strong>BioData AI · Próximamente</strong><p>Estamos preparando el espacio para la asistente inteligente que desarrollará el equipo de IA. Por ahora puedes explorar todos los módulos sin conexión.</p></div><span class="ai-prep-tag">EN DESARROLLO</span></div>
+      </section>
+      <section class="view" id="view-ruta" aria-label="Mi aprendizaje">
+        <div class="page-heading"><span class="eyebrow">TU EXPERIENCIA</span><h2>Mi ruta de aprendizaje</h2><p>Marca los módulos que hayas terminado. Tu avance se guarda en este dispositivo, sin crear una cuenta.</p></div>
+        <div class="roadmap-banner"><div><span class="eyebrow">PROGRESO GENERAL</span><h3 id="route-title">¡Tu aventura comienza aquí!</h3><p id="route-subtitle">Empieza a explorar los módulos y registra tu avance.</p></div><div class="route-number" id="route-percent">0%</div></div>
+        <div class="route-list" id="route-list"></div>
+        <div class="route-actions"><button class="button quiet" id="route-reset">Restablecer progreso</button><span class="hint">Esta función es una demo local: no guarda datos en MySQL.</span></div>
+      </section>
+      <section class="view" id="view-organismos"><div class="page-heading"><span class="eyebrow">BIOLOGÍA</span><h2>Organismos biológicos</h2><p>Busca un organismo y abre su ficha para conocer sus características.</p></div>
 <input id="organism-search" class="search" placeholder="Buscar por nombre o característica…"><div id="organism-filters" class="chips"><button class="chip active" data-filter="Todos">Todos</button><button class="chip" data-filter="Planta">Plantas</button><button class="chip" data-filter="Animal">Animales</button><button class="chip" data-filter="Hongo">Hongos</button><button class="chip" data-filter="Microorganismo">Microorganismos</button></div><div id="organism-grid" class="organism-grid"></div><div id="organism-detail" class="detail hidden"></div></section>
 
 <section class="view" id="view-tabla"><div class="page-heading"><span class="eyebrow">QUÍMICA</span><h2>Tabla periódica interactiva</h2><p>Selecciona un elemento para consultar sus datos básicos.</p></div><div class="periodic-layout"><div><div id="periodic-table" class="periodic-table"></div><p class="hint">Demostración con una selección de elementos; puede ampliarse a los 118.</p></div><aside id="element-detail" class="element-detail"></aside></div></section>
@@ -49,7 +95,11 @@
 <article class="lab-panel glossary-panel"><div class="section-title"><div><span class="eyebrow">CONSULTA RÁPIDA</span><h3>Glosario científico</h3></div><span id="glossary-count" class="tag">12 conceptos</span></div><label for="glossary-search" class="visually-hidden">Buscar concepto científico</label><input class="search" id="glossary-search" type="search" placeholder="Buscar término, definición o categoría…"><div id="glossary-results" class="glossary-results"></div></article>
 </section>
 <section class="view" id="view-desafio"><div class="page-heading"><span class="eyebrow">PONTE A PRUEBA</span><h2>Modo desafío</h2><p>Responde las preguntas y revisa tu puntuación.</p></div><div class="quiz-card"><div class="quiz-top"><span id="quiz-progress">Pregunta 1</span><span id="quiz-score">Puntuación: 0</span></div><div class="progress-track"><div id="quiz-progress-bar"></div></div><h3 id="quiz-question"></h3><div id="quiz-options" class="quiz-options"></div><div id="quiz-feedback" class="quiz-feedback"></div><div class="quiz-actions"><button id="next-question" class="button" disabled>Siguiente pregunta →</button><button id="restart-quiz" class="button quiet">Reiniciar</button></div></div></section>
-<footer class="site-footer"><b>BioData</b><span>Biología + Química + Genética + Tecnología</span><span>Prototipo escolar · 2026</span></footer>
-</main></div>
-</body></html>
 
+      <footer class="site-footer"><b>✳ BioData <span class="footer-v2">V2</span></b><span>Biología · Química · Genética · Tecnología</span><span>Proyecto educativo · Muestra del Quehacer CONALEP</span></footer>
+    </main>
+  </div>
+</div>
+<div class="mobile-backdrop" id="mobile-backdrop" hidden></div>
+</body>
+</html>
