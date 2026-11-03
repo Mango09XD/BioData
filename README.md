@@ -100,3 +100,36 @@ Abre \`index.html\` en un navegador moderno, o usa Live Server en Visual Studio 
 7. Comprobar el menú móvil y distintas anchuras de pantalla.
 8. Corroborar que el cuestionario muestra 13 preguntas y el laboratorio conserva sus controles.
 
+
+
+## BioData V3 — Enciclopedia extendida y visualizaciones animadas
+
+Se amplía la DEMO V2 sin depender de servicios pagados ni reemplazar el contenido anterior:
+
+- **Biblioteca científica:** 16 guías temáticas extensas distribuidas entre biología, genética, ecología, química y tecnología. Cada guía tiene 3 apartados explicativos, conceptos clave, autoevaluación y un enlace a una fuente educativa para profundizar.
+- **Explorador visual de ADN:** introduce secuencias A/T/C/G, observa su cadena complementaria, longitud y porcentaje GC con una visualización animada.
+- **Animación de mitosis:** 6 etapas (incluida la interfase previa y la citocinesis), navegación manual y reproducción automática. Modelo esquemático.
+- **Tabla periódica ampliada:** 118 elementos con nombres, símbolos, número atómico y ubicación. 26 fichas iniciales conservan más propiedades; las otras se identifican como fichas de referencia sin inventar sus masas o usos. Dispone de búsqueda y filtro de categoría.
+- **Diseño ampliado:** nuevos módulos en la navegación, tarjetas con microanimaciones, órbitas del inicio, estilos móviles y soporte para usuarios que prefieren menos movimiento.
+- **Integración con navegación V2:** permite buscar lecciones desde la barra superior y marcarlas como leídas mediante almacenamiento local.
+- No se integró un proveedor de IA ni se añadió una conexión real a MySQL.
+
+### Archivos de la ampliación
+- \`js/contenidos.js\`: guías, filtros y autoevaluaciones.
+- \`js/visualizaciones.js\`: modelo interactivo de ADN y secuencia de mitosis.
+- \`js/elementos-completos.js\`: catálogo de los 118 elementos.
+- \`js/tabla-periodica.js\`: representación interactiva de los elementos.
+- \`css/v3.css\`: diseño, efectos y controles de los nuevos módulos.
+- \`index.html\` y \`js/app.js\`: navegación e integración.
+
+### Comprobación de la demo
+1. Abrir \`index.html\`. En Inicio, comprobar la sección de módulos y animaciones.
+2. Entrar a **Biblioteca**, buscar ADN, cambiar categorías, abrir una guía, responder y marcar como leída.
+3. Ir a **Explorador visual**, escribir una secuencia de ADN, comprobar pares A-T y C-G y ajustar la entrada; avanzar y reproducir mitosis.
+4. En **Tabla periódica**, seleccionar hidrógeno, carbono y oganesón, filtrar y buscar por nombre/símbolo/número.
+5. Revisar los módulos heredados, la búsqueda, el menú móvil y el progreso de aprendizaje.
+6. Activar la preferencia del sistema «reducir movimiento» y comprobar que las animaciones decorativas se detienen.
+
+**Alcance científico:** los simuladores son ilustraciones didácticas, no visualizaciones moleculares de escala exacta ni predicciones experimentales. Las guías son material de apoyo, no sustituyen manuales especializados. Antes de su presentación pública conviene revisar científicamente las explicaciones y sus fuentes.
+
+**Validación realizada en código:** análisis de sintaxis de los scripts JS modificados, comprobación de identificadores principales y carga del catálogo de 118 símbolos únicos. Pendiente: prueba integral con navegador en varios tamaños de pantalla.
