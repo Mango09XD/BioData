@@ -41,3 +41,22 @@ Prototipo educativo para la Muestra del Quehacer Educativo. Integra Biología y 
 ## Para editar
 Puedes editar los archivos con Visual Studio Code. Mantén la estructura de carpetas para que los enlaces a CSS y JavaScript sigan funcionando.
 
+
+## Mejora: Laboratorio interactivo
+La rama `mejora-laboratorio-interactivo` añade un módulo de aprendizaje experimental, sin dependencias ni servicios de pago:
+- **Cuadro de Punnett:** cruces monohíbridos AA/Aa/aa, cuatro combinaciones y porcentajes genotípicos y fenotípicos.
+- **Factores limitantes de la fotosíntesis:** controles de luz, agua y CO₂. El indicador toma el valor mínimo; es una **simulación conceptual**, no una tasa experimental.
+- **Glosario científico:** 12 conceptos de biología, genética, células y tecnología con búsqueda inmediata.
+- Acceso desde la portada y la navegación lateral, diseño adaptable y controles accesibles.
+
+Archivos afectados: `index.html`, `css/styles.css`, `js/app.js`, y el nuevo `js/laboratorio.js`.
+
+### Pruebas manuales sugeridas
+1. Abrir `index.html`; entrar en «Laboratorio» desde el menú y desde la portada.
+2. En Punnett comprobar que `Aa × Aa` muestra AA 25 %, Aa 50 %, aa 25 % y dominante 75 %.
+3. Comprobar `AA × aa`: 100 % Aa, dominante 100 %.
+4. En fotosíntesis poner agua en 0: indicador 0. Cambiar los controles y comprobar el factor limitante.
+5. Buscar «ADN» y «SQL» en el glosario; probar también una búsqueda vacía o sin resultados.
+6. Revisar en móvil y verificar que los seis módulos anteriores siguen navegando correctamente.
+
+No se incluye una IA real ni se cambia la demostración de MySQL. La integración futura de IA será responsabilidad del equipo asignado.
