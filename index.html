@@ -8,13 +8,17 @@
 <title>BioData V2 | Explora la ciencia</title>
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/v2.css">
+<link rel="stylesheet" href="css/v3.css">
 <script defer src="js/data.js"></script>
+<script defer src="js/elementos-completos.js"></script>
 <script defer src="js/organismos.js"></script>
 <script defer src="js/tabla-periodica.js"></script>
 <script defer src="js/celulas-adn.js"></script>
 <script defer src="js/base-datos.js"></script>
 <script defer src="js/desafios.js"></script>
 <script defer src="js/laboratorio.js"></script>
+<script defer src="js/contenidos.js"></script>
+<script defer src="js/visualizaciones.js"></script>
 <script defer src="js/app.js"></script>
 </head>
 <body>
@@ -27,7 +31,9 @@
       <button class="nav-item" data-view="organismos"><span class="nav-icon">🌿</span> Organismos</button>
       <button class="nav-item" data-view="tabla"><span class="nav-icon">⚛</span> Tabla periódica</button>
       <button class="nav-item" data-view="celulas"><span class="nav-icon">🧬</span> Células y ADN</button>
-      <button class="nav-item" data-view="laboratorio"><span class="nav-icon">⚗</span> Laboratorio <span class="nav-new">NUEVO</span></button>
+      <button class="nav-item" data-view="laboratorio"><span class="nav-icon">⚗</span> Laboratorio</button>
+      <button class="nav-item" data-view="biblioteca"><span class="nav-icon">📚</span> Biblioteca <span class="nav-new">16 GUÍAS</span></button>
+      <button class="nav-item" data-view="explorador"><span class="nav-icon">🧪</span> Explorador visual <span class="nav-new">NUEVO</span></button>
       <div class="sidebar-label inside">APLICAR</div>
       <button class="nav-item" data-view="desafio"><span class="nav-icon">◎</span> Desafíos</button>
       <button class="nav-item" data-view="base-datos"><span class="nav-icon">▤</span> Base de datos</button>
@@ -50,7 +56,7 @@
     <main id="app-main">
       <section class="view active" id="view-inicio" aria-label="Inicio">
         <div class="v2-hero">
-          <div class="v2-hero-copy"><span class="hero-kicker"><span class="online-dot"></span> BIENVENIDO A BIODATA 2.0</span><h1>La ciencia se<br><em>descubre explorando.</em></h1><p>Conoce la vida desde sus células hasta los ecosistemas. Investiga, experimenta y desafía lo que sabes en una experiencia interactiva.</p><div class="hero-buttons"><button class="button hero-primary" data-go="organismos">Empezar a explorar <span>↗</span></button><button class="button hero-secondary" data-go="laboratorio">Abrir laboratorio ↗</button></div><div class="hero-footnote"><span>✦</span> Ciencia · Tecnología · Creatividad <span class="footnote-divider">|</span> Proyecto educativo</div></div>
+          <div class="v2-hero-copy"><span class="hero-kicker"><span class="online-dot"></span> BIODATA · EXPERIENCIA INTERACTIVA</span><h1>La ciencia se<br><em>descubre explorando.</em></h1><p>Conoce la vida desde sus células hasta los ecosistemas. Investiga, experimenta y desafía lo que sabes en una experiencia interactiva.</p><div class="hero-buttons"><button class="button hero-primary" data-go="organismos">Empezar a explorar <span>↗</span></button><button class="button hero-secondary" data-go="laboratorio">Abrir laboratorio ↗</button></div><div class="hero-footnote"><span>✦</span> 16 LECCIONES · SIMULADORES · EXPLORACIÓN <span class="footnote-divider">|</span> Proyecto educativo</div></div>
           <div class="v2-hero-visual" aria-hidden="true"><div class="orbit-ring orbit-one"></div><div class="orbit-ring orbit-two"></div><div class="orbit-ring orbit-three"></div><div class="central-orb"><svg viewBox="0 0 200 200" role="img" aria-label="Ilustración de ADN"><defs><linearGradient id="dnaGradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b4ffd9"/><stop offset="1" stop-color="#4de0ee"/></linearGradient></defs><g fill="none" stroke="url(#dnaGradient)" stroke-width="6" stroke-linecap="round"><path d="M65 20 C155 55 45 135 135 180"/><path d="M135 20 C45 55 155 135 65 180"/></g><g stroke="#b0eaf4" stroke-width="4" opacity=".7"><line x1="80" y1="29" x2="120" y2="29"/><line x1="59" y1="55" x2="141" y2="55"/><line x1="77" y1="80" x2="123" y2="80"/><line x1="79" y1="108" x2="121" y2="108"/><line x1="59" y1="135" x2="141" y2="135"/><line x1="75" y1="162" x2="125" y2="162"/></g></svg></div><div class="orbit-tag tag-one">🧪 <span>Química</span></div><div class="orbit-tag tag-two">🌿 <span>Biología</span></div><div class="orbit-tag tag-three">⚛ <span>Genética</span></div><span class="orbit-spark spark-one">✦</span><span class="orbit-spark spark-two">✧</span></div>
         </div>
         <div class="stat-grid" aria-label="Resumen de BioData"><div class="stat-card"><span class="stat-icon green">🌱</span><div><strong id="stat-organisms">—</strong><small>Organismos</small></div><span class="stat-arrow">↗</span></div><div class="stat-card"><span class="stat-icon blue">⚛</span><div><strong id="stat-elements">—</strong><small>Elementos químicos</small></div><span class="stat-arrow">↗</span></div><div class="stat-card"><span class="stat-icon purple">⚗</span><div><strong>2</strong><small>Simulaciones</small></div><span class="stat-arrow">↗</span></div><div class="stat-card"><span class="stat-icon amber">◎</span><div><strong id="stat-questions">—</strong><small>Preguntas para practicar</small></div><span class="stat-arrow">↗</span></div></div>
@@ -62,10 +68,42 @@
           <button class="module-card orange" data-go="laboratorio"><span>🧪</span><b>Laboratorio virtual</b><small>Experimenta con genética y fotosíntesis.</small><em>Probar simuladores <span>↗</span></em></button>
           <button class="module-card blue" data-go="base-datos"><span>▤</span><b>Bases de datos</b><small>Conoce las tablas y cómo se relacionan los datos.</small><em>Explorar área <span>↗</span></em></button>
           <button class="module-card pink" data-go="administracion"><span>▦</span><b>Gestión científica</b><small>Comprende cómo se organiza un proyecto.</small><em>Explorar área <span>↗</span></em></button>
+          <button class="module-card cyan" data-go="biblioteca"><span>📚</span><b>Biblioteca científica</b><small>16 lecciones con explicaciones extensas y preguntas de comprensión.</small><em>Leer y aprender <span>↗</span></em></button>
+          <button class="module-card violet" data-go="explorador"><span>🧬</span><b>Explorador visual</b><small>Construye cadenas de ADN y recorre las etapas de la mitosis.</small><em>Experimentar <span>↗</span></em></button>
         </div>
         <div class="dashboard-bottom"><article class="feature-panel"><div><span class="eyebrow">EL RETO DE HOY</span><h2>¿Cuánto sabes realmente?</h2><p>Resuelve preguntas sobre genética, química y seres vivos. Aprende a partir de tus respuestas.</p><button class="button feature-button" data-go="desafio">Comenzar desafío ↗</button></div><div class="feature-art" aria-hidden="true">✳<span>?</span></div></article><article class="journey-panel"><div class="journey-header"><span class="eyebrow">TU RECORRIDO</span><span class="journey-icon">✦</span></div><h2>Tu viaje científico</h2><p>Registra los módulos que has explorado. El avance se guarda únicamente en este navegador.</p><div class="journey-meter"><span id="home-progress-fill"></span></div><div class="journey-bottom"><strong id="home-progress-value">0 de 7 áreas</strong><button data-go="ruta">Ver mi avance ↗</button></div></article></div>
         <div class="ai-prep"><div class="ai-prep-symbol">✧</div><div><strong>BioData AI · Próximamente</strong><p>Estamos preparando el espacio para la asistente inteligente que desarrollará el equipo de IA. Por ahora puedes explorar todos los módulos sin conexión.</p></div><span class="ai-prep-tag">EN DESARROLLO</span></div>
       </section>
+
+<section class="view" id="view-biblioteca" aria-label="Biblioteca científica">
+  <div class="page-heading"><span class="eyebrow">CENTRO DE CONOCIMIENTO · APRENDE MÁS</span><h2>Biblioteca científica</h2><p>Explora lecciones desarrolladas por temas, desde la estructura de las células hasta ecosistemas, química y tecnología. Incluyen conceptos clave, ejemplos y preguntas para comprobar la comprensión.</p></div>
+  <div class="library-top-feature"><div class="library-feature-icon">📚</div><div><strong>Tu propia enciclopedia interactiva</strong><p>Contenido consultable sin internet. Marca las lecciones leídas y regresa cuando quieras. En cada tema encontrarás fuentes educativas para profundizar.</p></div><span class="library-feature-count">16<br><small>GUÍAS</small></span></div>
+  <div class="library-toolbar"><label class="sr-only" for="library-search">Buscar lecciones</label><input id="library-search" class="search" type="search" placeholder="Buscar por tema, palabra clave o área…"><span id="library-count" class="library-count">16 lecciones</span></div>
+  <div id="library-categories" class="chips library-categories" aria-label="Filtrar lecciones por área"></div>
+  <div id="library-grid" class="library-grid"></div>
+  <article id="library-detail" class="library-detail" hidden></article>
+  <p class="hint">Los contenidos son educativos y resumidos para esta demostración. Las fuentes enlazadas permiten consultar material más extenso; revisa los conceptos antes de una presentación académica.</p>
+</section>
+<section class="view" id="view-explorador" aria-label="Explorador visual">
+  <div class="page-heading"><span class="eyebrow">DESCUBRE · MANIPULA · OBSERVA</span><h2>Explorador visual</h2><p>Usa herramientas gráficas para comprender estructuras y procesos biológicos. Cada control modifica el resultado en tiempo real.</p></div>
+  <div class="visual-lab-grid">
+    <article class="visual-lab-card"><div class="visual-lab-top"><span class="eyebrow">GENÉTICA MOLECULAR</span><span class="visual-label">INTERACTIVO</span></div><h3>Construye tu ADN</h3><p>Escribe una cadena utilizando A, T, C y G. Observa los pares de bases y descubre su secuencia complementaria.</p>
+      <label class="input-label" for="dna-input">Secuencia de ADN (máximo 36 bases)</label><input id="dna-input" maxlength="36" value="ATGCCGTTAACG" spellcheck="false" autocomplete="off" aria-describedby="dna-tip">
+      <div class="visual-actions"><button id="dna-example" class="button quiet">↻ Ejemplo</button><button id="dna-clear" class="button quiet">Limpiar</button></div>
+      <div id="dna-visual" class="dna-visual" aria-label="Representación de la doble cadena de ADN"></div>
+      <div class="dna-facts"><div><small>Complementaria</small><strong id="dna-complement">—</strong></div><div><small>Longitud</small><strong id="dna-count">0 bases</strong></div><div><small>Contenido GC</small><strong id="dna-gc">—</strong></div></div>
+      <p id="dna-tip" class="hint">Escribe A, T, C o G para formar el fragmento.</p><p class="science-note"><strong>Nota científica:</strong> Esta representación es esquemática; las cadenas de ADN son antiparalelas y la secuencia indicada no especifica su orientación 5′→3′.</p>
+    </article>
+    <article class="visual-lab-card"><div class="visual-lab-top"><span class="eyebrow">DIVISIÓN CELULAR</span><span class="visual-label">ANIMADO</span></div><h3>Viaje por la mitosis</h3><p>Avanza entre las fases de división de una célula animal. Reproduce la secuencia o selecciona una etapa para aprender qué sucede.</p>
+      <div class="mitosis-scene"><svg id="mitosis-visual" viewBox="0 0 360 240" role="img" aria-label="Representación esquemática de mitosis"></svg></div>
+      <div class="mitosis-stage-info"><span id="mitosis-count">1 / 6</span><strong id="mitosis-title">Interfase</strong><p id="mitosis-caption" aria-live="polite"></p></div>
+      <div class="mitosis-actions"><button id="mitosis-prev" class="button quiet">← Anterior</button><button id="mitosis-play" class="button">▶ Reproducir</button><button id="mitosis-next" class="button quiet">Siguiente →</button></div>
+      <div id="mitosis-step-buttons" class="mitosis-step-buttons" aria-label="Elegir fase"></div>
+      <p class="science-note"><strong>Nota científica:</strong> La interfase antecede a la mitosis; la citocinesis puede solaparse con la telofase. El diagrama es simbólico y no representa posiciones cromosómicas exactas.</p>
+    </article>
+  </div>
+  <div class="visual-followup"><span>🧠</span><div><strong>¿Listo para seguir investigando?</strong><p>Después de experimentar, revisa la lección de ADN y la explicación del ciclo celular.</p></div><button class="button" data-go="biblioteca">Ir a Biblioteca ↗</button></div>
+</section>
       <section class="view" id="view-ruta" aria-label="Mi aprendizaje">
         <div class="page-heading"><span class="eyebrow">TU EXPERIENCIA</span><h2>Mi ruta de aprendizaje</h2><p>Marca los módulos que hayas terminado. Tu avance se guarda en este dispositivo, sin crear una cuenta.</p></div>
         <div class="roadmap-banner"><div><span class="eyebrow">PROGRESO GENERAL</span><h3 id="route-title">¡Tu aventura comienza aquí!</h3><p id="route-subtitle">Empieza a explorar los módulos y registra tu avance.</p></div><div class="route-number" id="route-percent">0%</div></div>
@@ -75,7 +113,7 @@
       <section class="view" id="view-organismos"><div class="page-heading"><span class="eyebrow">BIOLOGÍA</span><h2>Organismos biológicos</h2><p>Busca un organismo y abre su ficha para conocer sus características.</p></div>
 <input id="organism-search" class="search" placeholder="Buscar por nombre o característica…"><div id="organism-filters" class="chips"><button class="chip active" data-filter="Todos">Todos</button><button class="chip" data-filter="Planta">Plantas</button><button class="chip" data-filter="Animal">Animales</button><button class="chip" data-filter="Hongo">Hongos</button><button class="chip" data-filter="Microorganismo">Microorganismos</button></div><div id="organism-grid" class="organism-grid"></div><div id="organism-detail" class="detail hidden"></div></section>
 
-<section class="view" id="view-tabla"><div class="page-heading"><span class="eyebrow">QUÍMICA</span><h2>Tabla periódica interactiva</h2><p>Selecciona un elemento para consultar sus datos básicos.</p></div><div class="periodic-layout"><div><div id="periodic-table" class="periodic-table"></div><p class="hint">Demostración con una selección de elementos; puede ampliarse a los 118.</p></div><aside id="element-detail" class="element-detail"></aside></div></section>
+<section class="view" id="view-tabla"><div class="page-heading"><span class="eyebrow">QUÍMICA</span><h2>Tabla periódica interactiva</h2><p>Explora los 118 elementos organizados por períodos y grupos. Selecciona cualquier símbolo para consultar su ficha, busca por nombre y filtra por categorías.</p></div><div class="periodic-controls"><label class="sr-only" for="periodic-search">Buscar elemento químico</label><input class="search" type="search" id="periodic-search" placeholder="Busca nombre, símbolo o número atómico…"><label class="sr-only" for="periodic-category">Filtrar categoría</label><select id="periodic-category" aria-label="Filtrar categoría de elementos"></select><span id="periodic-count">118 / 118 elementos</span></div><div class="periodic-layout"><div><div class="periodic-scroll"><div id="periodic-table" class="periodic-table"></div></div><p class="hint">La tabla incluye los 118 elementos. Las fichas que cuentan con datos ampliados incorporan masa y aplicaciones; el resto muestra información esencial y referencia a IUPAC. Los lantánidos y actínidos se representan en filas inferiores.</p></div><aside id="element-detail" class="element-detail"></aside></div></section>
 
 <section class="view" id="view-celulas"><div class="page-heading"><span class="eyebrow">BIOLOGÍA CELULAR</span><h2>Células, ADN y cromosomas</h2><p>Selecciona una estructura para conocer su función.</p></div><div class="cell-layout"><div class="cell-illustration"><div class="cell-shape"><button class="cell-part nucleus" data-part="Núcleo">●</button><button class="cell-part vacuole" data-part="Vacuola">◌</button><button class="cell-part chloro" data-part="Cloroplastos">✳</button><button class="cell-part mito" data-part="Mitocondrias">≈</button><button class="cell-part membrane" data-part="Membrana plasmática">◎</button></div><p class="hint">Diagrama esquemático: pulsa una estructura.</p></div><div class="cell-info"><div class="subnav"><button class="subtab active" data-part="Célula vegetal">Célula vegetal</button><button class="subtab" data-part="Núcleo">Núcleo</button><button class="subtab" data-part="Cromosomas">Cromosomas</button><button class="subtab" data-part="ADN">ADN</button><button class="subtab" data-part="Cloroplastos">Cloroplastos</button><button class="subtab" data-part="Mitocondrias">Mitocondrias</button><button class="subtab" data-part="Vacuola">Vacuola</button><button class="subtab" data-part="Membrana plasmática">Membrana plasmática</button></div><article id="cell-detail" class="info-card"></article></div></div></section>
 

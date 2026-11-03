@@ -5,7 +5,7 @@
     ["inicio","Inicio"],["organismos","Organismos"],["tabla","Tabla periódica"],
     ["celulas","Células y ADN"],["laboratorio","Laboratorio"],
     ["desafio","Desafíos"],["base-datos","Base de datos"],
-    ["administracion","Administración"],["ruta","Mi aprendizaje"]
+    ["administracion","Administración"],["biblioteca","Biblioteca científica"],["explorador","Explorador visual"],["ruta","Mi aprendizaje"]
   ];
   const routeModules = [
     ["organismos","🌿","Organismos biológicos","Explora fichas de seres vivos"],
@@ -14,7 +14,9 @@
     ["laboratorio","🧪","Laboratorio interactivo","Experimenta con modelos educativos"],
     ["desafio","◎","Desafíos","Resuelve el cuestionario científico"],
     ["base-datos","▤","Bases de datos","Consulta las estructuras de información"],
-    ["administracion","▦","Administración","Comprende los procesos del proyecto"]
+    ["administracion","▦","Administración","Comprende los procesos del proyecto"],
+    ["biblioteca","📚","Biblioteca científica","Lee temas y comprueba tus conocimientos"],
+    ["explorador","🧪","Explorador visual","Manipula secuencias de ADN y observa la mitosis"]
   ];
   const $ = id => document.getElementById(id);
   const safeLoad = key => { try { return localStorage.getItem(key); } catch { return null; } };
@@ -44,6 +46,7 @@
     if(name==="organismos")window.BioOrganisms?.render();
     if(name==="tabla")window.BioPeriodicTable?.render();
     if(name==="base-datos")window.BioDatabase?.render();
+    if(name==="biblioteca")window.BioLibrary?.render();
     if(name==="ruta")renderRoute();
     if(updateHash && location.hash!=="#"+name)history.replaceState(null,"","#"+name);
     $("search-results").hidden=true;
@@ -95,7 +98,8 @@
     const elements=(window.BIODATA?.elements||[]).map(e=>({name:e.name,detail:"Elemento "+e.s+" · "+e.n,view:"tabla",action:()=>window.BioPeriodicTable?.show(e.n)}));
     const cells=Object.keys(window.BIODATA?.cellParts||{}).map(name=>({name,detail:"Biología celular",view:"celulas",action:()=>window.BioCells?.show(name)}));
     const modules=routeModules.map(([view,,name])=>({name,detail:"Módulo de BioData",view}));
-    return [...organisms,...elements,...cells,...modules];
+    const lessons=(window.BioLibrary?.lessons||[]).map(l=>({name:l.title,detail:"Lección de "+l.cat,view:"biblioteca",action:()=>window.BioLibrary?.show(l.id)}));
+    return [...organisms,...elements,...cells,...lessons,...modules];
   };
   function showSearch(query){
     const box=$("search-results");

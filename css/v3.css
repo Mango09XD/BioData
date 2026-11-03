@@ -1,0 +1,142 @@
+/* BioData V3 · Biblioteca, laboratorios visuales y movimiento */
+:root{--v3-accent:#15bd9e}
+@keyframes heroFloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(4deg)}}
+@keyframes orbitDrift{to{transform:rotate(360deg)}}
+@keyframes subtleGlow{0%,100%{box-shadow:0 0 40px #20e5cc20,inset 0 0 38px #35e5ee22}50%{box-shadow:0 0 85px #20e5cc55,inset 0 0 48px #35e5ee44}}
+@keyframes slideReveal{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dnaFlow{0%,100%{transform:translateX(var(--offset)) scale(.96)}50%{transform:translateX(calc(var(--offset) * -1)) scale(1.04)}}
+@keyframes sceneEnter{from{opacity:.35;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+.v2-hero-visual .orbit-one{animation:orbitDrift 42s linear infinite}
+.v2-hero-visual .orbit-two{animation:orbitDrift 29s linear infinite reverse}
+.v2-hero-visual .central-orb{animation:heroFloat 7s ease-in-out infinite,subtleGlow 5s ease-in-out infinite}
+.v2-hero-visual .orbit-tag{transition:transform .25s,background .25s}
+.v2-hero-visual .orbit-tag:hover{transform:translateY(-5px);background:#20647a}
+.v2-module-grid .module-card{animation:slideReveal .6s both}
+.v2-module-grid .module-card:nth-child(2){animation-delay:.07s}
+.v2-module-grid .module-card:nth-child(3){animation-delay:.14s}
+.v2-module-grid .module-card:nth-child(4){animation-delay:.21s}
+.v2-module-grid .module-card:nth-child(5){animation-delay:.28s}
+.v2-module-grid .module-card:nth-child(6){animation-delay:.35s}
+.v2-module-grid .module-card:nth-child(7){animation-delay:.42s}
+.v2-module-grid .module-card:nth-child(8){animation-delay:.49s}
+.v2-module-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.v2-module-grid .module-card{min-height:218px}
+.library-top-feature{display:flex;align-items:center;gap:21px;background:linear-gradient(110deg,#0b354b,#087c76);border-radius:16px;padding:27px 32px;color:#fff;margin-bottom:20px;overflow:hidden;position:relative}
+.library-top-feature:after{content:"";width:230px;height:230px;border:1px solid #ffffff29;border-radius:50%;position:absolute;right:-70px;top:-85px;pointer-events:none}
+.library-feature-icon{font-size:42px;width:80px;height:80px;background:#ffffff16;border:1px solid #ffffff25;border-radius:19px;display:grid;place-items:center;flex-shrink:0}
+.library-top-feature strong{font-size:19px}
+.library-top-feature p{color:#c9e5e7;line-height:1.65;font-size:12px;max-width:650px}
+.library-feature-count{font-size:37px;font-weight:850;margin-left:auto;text-align:center;position:relative;white-space:nowrap}
+.library-feature-count small{display:block;font-size:9px;letter-spacing:3px;color:#a8f8ce}
+.library-toolbar{display:flex;align-items:center;gap:15px}
+.library-toolbar input{margin:0}
+.library-count{white-space:nowrap;font-size:12px;color:var(--muted)}
+.library-categories{margin:17px 0 20px}
+.library-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:18px 0 24px}
+.lesson-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px;display:flex;flex-direction:column;min-height:234px;transition:transform .22s,box-shadow .22s,border-color .22s}
+.lesson-card:hover{transform:translateY(-4px);box-shadow:0 15px 35px #17344717;border-color:#96ddcb}
+.lesson-icon{font-size:30px;width:57px;height:57px;display:grid;place-items:center;border-radius:15px;background:#e8f8f2;margin-bottom:14px}
+.lesson-card[data-cat="Genética"] .lesson-icon{background:#edeafb}
+.lesson-card[data-cat="Ecología"] .lesson-icon{background:#e3f7e5}
+.lesson-card[data-cat="Química"] .lesson-icon{background:#fff3df}
+.lesson-card[data-cat="Tecnología"] .lesson-icon{background:#e8f0ff}
+.lesson-meta{display:flex;align-items:center;justify-content:space-between;gap:7px}
+.lesson-badge{color:#078c72;background:#e0f7ee;border-radius:6px;padding:5px 8px;font-size:10px;font-weight:800}
+.lesson-time{color:#98a7b2;font-size:10px}
+.lesson-card h3{font-size:16px;margin:13px 0 7px;line-height:1.4}
+.lesson-card p{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 16px}
+.lesson-bottom{margin-top:auto;border-top:1px solid var(--line);padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.lesson-done{color:#748b98;font-size:11px;font-weight:700}
+.lesson-open{border:0;color:#0d9f82;background:transparent;font-weight:800;font-size:11px}
+.library-empty{grid-column:1/-1;color:var(--muted)}
+.library-detail[hidden]{display:none}
+.library-detail{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:17px;padding:clamp(22px,4vw,42px);scroll-margin-top:95px;box-shadow:0 16px 50px #1634470e}
+.lesson-detail-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.lesson-back{border:0;background:none;color:#0b987f;font-size:12px;font-weight:800;padding:0}
+.lesson-detail-icon{font-size:43px}
+.library-detail h2{font-size:clamp(26px,3vw,36px);margin:9px 0 8px}
+.lesson-detail-lead{font-size:15px;color:var(--muted);line-height:1.7}
+.lesson-sections{max-width:850px;display:grid;gap:12px;padding:14px 0}
+.lesson-text-section{padding:4px 0 13px;border-bottom:1px solid var(--line)}
+.lesson-text-section h3{font-size:20px;margin:8px 0 11px}
+.lesson-text-section p{color:var(--muted);line-height:1.92;font-size:14px;margin:0}
+.lesson-keywords{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:23px 0}
+.lesson-keywords strong{font-size:12px}
+.lesson-mini-quiz{padding:23px;background:#f3f9f8;border:1px solid #d8ebe6;border-radius:14px}
+.lesson-mini-quiz h3{font-size:18px;margin:11px 0}
+.lesson-mini-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}
+.lesson-mini-options .quiz-option{text-align:center;font-size:12px}
+.lesson-detail-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:20px}
+.lesson-detail-footer a{color:#079a7c;text-decoration:none;font-weight:800;font-size:13px}
+.lesson-detail-footer a:hover{text-decoration:underline}
+.visual-lab-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.visual-lab-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(18px,2.5vw,30px);min-width:0;box-shadow:0 8px 24px #1634470b}
+.visual-lab-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.visual-label{border-radius:7px;background:#e6f9f2;color:#09846a;padding:6px 8px;font-size:9px;letter-spacing:1px;font-weight:900}
+.visual-lab-card h3{font-size:24px;letter-spacing:-.5px;margin:15px 0 10px}
+.visual-lab-card p{color:var(--muted);font-size:13px;line-height:1.75}
+.input-label{display:block;color:var(--ink);font-size:11px;font-weight:800;margin:20px 0 8px}
+#dna-input{display:block;border-radius:10px;padding:13px 16px;border:1px solid var(--line);width:100%;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:3px;text-transform:uppercase;background:#f7fbfa;color:#155e51}
+.visual-actions{display:flex;gap:8px;margin:10px 0 19px}
+.visual-actions .button{padding:8px 12px;font-size:11px}
+.dna-visual{background:radial-gradient(circle at center,#173f54,#0b2538);border-radius:16px;min-height:240px;max-height:330px;overflow:auto;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;padding:20px 25px;position:relative}
+.dna-visual:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(#55bfa72e 1px,transparent 1px);background-size:18px 18px}
+.dna-pair{display:flex;align-items:center;justify-content:center;gap:14px;position:relative;z-index:1;min-height:18px;transform:translateX(var(--offset));animation:dnaFlow 3.5s ease-in-out infinite alternate}
+.dna-letter{display:grid;place-items:center;width:27px;height:19px;border-radius:5px;background:var(--base-color);color:#07383b;font-size:10px;font-family:Consolas,monospace;font-weight:900}
+.dna-bond{color:#a9d4db;font-size:12px;letter-spacing:4px}
+.dna-facts{display:grid;grid-template-columns:1.3fr .85fr .85fr;gap:10px;margin-top:15px}
+.dna-facts>div{background:#f2f8f7;border:1px solid #e2f0ec;border-radius:10px;padding:12px;min-width:0}
+.dna-facts small{display:block;color:#7d9698;font-size:10px;margin-bottom:6px}
+.dna-facts strong{display:block;color:#0d806d;font-size:12px;overflow-wrap:anywhere;font-family:Consolas,monospace}
+.science-note{background:#f7f7ff;border:1px solid #e9e8f9;border-radius:11px;padding:13px;font-size:11px!important;color:#637488!important}
+.mitosis-scene{background:radial-gradient(ellipse at center,#17465a,#0b2639);border-radius:16px;display:grid;place-items:center;min-height:300px;margin-top:20px}
+.mitosis-scene svg{width:100%;max-width:440px;max-height:300px;animation:sceneEnter .3s ease}
+.mitosis-stage-info{background:#f2f8f7;border:1px solid #deede8;border-radius:12px;padding:14px 17px;margin-top:14px}
+.mitosis-stage-info span{color:#079b80;font-size:11px;font-weight:800}
+.mitosis-stage-info strong{display:block;margin:4px 0;font-size:18px}
+.mitosis-stage-info p{margin:0}
+.mitosis-actions{display:flex;justify-content:center;gap:9px;margin:16px 0}
+.mitosis-actions .button{font-size:11px;padding:10px 12px}
+.mitosis-step-buttons{display:flex;gap:5px;flex-wrap:wrap}
+.mitosis-step{border:1px solid var(--line);border-radius:8px;background:#f5faf9;color:#587686;font-size:10px;padding:8px 10px}
+.mitosis-step.active{background:#0b8e79;border-color:#0b8e79;color:#fff}
+.visual-followup{display:flex;align-items:center;gap:16px;background:linear-gradient(115deg,#e6f6f2,#eaf3fb);border:1px solid #cde9df;border-radius:14px;padding:20px 24px;margin-top:21px}
+.visual-followup>span{font-size:30px}
+.visual-followup strong{font-size:14px}
+.visual-followup p{font-size:12px;color:#69858e;line-height:1.6}
+.visual-followup .button{margin-left:auto;white-space:nowrap;font-size:12px}
+body.dark-theme .library-top-feature,body.dark-theme .roadmap-banner{border:1px solid #247c78}
+body.dark-theme .lesson-card,body.dark-theme .library-detail,body.dark-theme .visual-lab-card{background:#162b3b;border-color:#2c4657;color:#e9f2f9}
+body.dark-theme .lesson-card h3,body.dark-theme .library-detail h2,body.dark-theme .lesson-text-section h3,body.dark-theme .visual-lab-card h3,body.dark-theme .input-label{color:#e6f3fa}
+body.dark-theme .lesson-mini-quiz,body.dark-theme .mitosis-stage-info,body.dark-theme .dna-facts>div,body.dark-theme .visual-followup{background:#1e3949;border-color:#355568}
+body.dark-theme .dna-facts strong{color:#62e9c4}
+body.dark-theme #dna-input{background:#203847;border-color:#35546a;color:#8bf0d6}
+body.dark-theme .science-note{background:#24354e;border-color:#41516e;color:#b5c4db!important}
+body.dark-theme .lesson-mini-options .quiz-option{background:#1c3d4c;color:#e5f1f8}
+body.dark-theme .lesson-mini-options .quiz-option.correct{background:#135b46}
+body.dark-theme .lesson-mini-options .quiz-option.incorrect{background:#673638}
+body.dark-theme .mitosis-step{background:#233b48;border-color:#416071;color:#d6e8ed}
+body.dark-theme .mitosis-step.active{background:#098b75}
+@media(max-width:1400px){.v2-module-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.library-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1000px){.v2-module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.visual-lab-grid{grid-template-columns:1fr}.library-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.v2-module-grid,.library-grid{grid-template-columns:1fr}.library-top-feature{padding:19px;gap:14px}.library-feature-icon{width:52px;height:52px;font-size:28px}.library-top-feature strong{font-size:14px}.library-feature-count{font-size:23px}.library-toolbar{align-items:stretch;flex-direction:column}.lesson-mini-options{grid-template-columns:1fr}.visual-followup{align-items:flex-start;flex-direction:column}.visual-followup .button{margin-left:0}.dna-facts{grid-template-columns:1fr 1fr}.dna-facts>div:first-child{grid-column:1/-1}.mitosis-actions{flex-wrap:wrap}.v2-module-grid .module-card{min-height:170px}}
+@media(prefers-reduced-motion:reduce){.v2-hero-visual .orbit-one,.v2-hero-visual .orbit-two,.v2-hero-visual .central-orb,.dna-pair,.v2-module-grid .module-card{animation:none!important}.lesson-card,.v2-module-grid .module-card{transition:none!important}}
+
+/* Tabla periódica completa: respeta grupos y permite explorar horizontalmente */
+.periodic-controls{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.periodic-controls .search{flex:1;margin-bottom:0;min-width:170px}
+.periodic-controls select{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;max-width:240px;min-width:160px}
+.periodic-controls>span{color:var(--muted);font-size:11px;font-weight:800;white-space:nowrap}
+.periodic-scroll{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px;box-shadow:0 8px 24px #16344709}
+.periodic-table.periodic-table-full{display:grid;grid-template-columns:repeat(18,minmax(44px,1fr));grid-template-rows:repeat(7,64px) 20px repeat(2,64px);min-width:885px;gap:3px}
+.periodic-table-full .element-cell{grid-column:var(--column);grid-row:var(--row);min-height:0;min-width:0;gap:0;position:relative;transition:opacity .15s,transform .15s,box-shadow .15s}
+.periodic-table-full .element-cell:hover{transform:translateY(-2px);z-index:2;box-shadow:0 4px 13px #173b4c2c}
+.periodic-table-full .element-cell small{font-size:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.periodic-table-full .element-cell strong{font-size:18px;line-height:1.4}
+.periodic-table-full .element-cell.dimmed{opacity:.12}
+.periodic-table-full .element-cell.selected{outline:3px solid #008e81;z-index:1;opacity:1}
+.element-source{grid-column:1/-1;color:#098f79;text-decoration:none;font-size:12px;font-weight:800;margin-top:12px}
+.element-source:hover{text-decoration:underline}
+body.dark-theme .periodic-scroll,body.dark-theme .periodic-controls select{background:#162b3b;color:#e4f1f8;border-color:#2c4657}
+body.dark-theme .element-source{color:#74e7c5}
+@media(max-width:750px){.periodic-controls{flex-wrap:wrap}.periodic-controls .search{flex-basis:100%}.periodic-controls select{flex:1}}
