@@ -121,3 +121,22 @@ body.dark-theme .mitosis-step.active{background:#098b75}
 @media(max-width:1000px){.v2-module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.visual-lab-grid{grid-template-columns:1fr}.library-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.v2-module-grid,.library-grid{grid-template-columns:1fr}.library-top-feature{padding:19px;gap:14px}.library-feature-icon{width:52px;height:52px;font-size:28px}.library-top-feature strong{font-size:14px}.library-feature-count{font-size:23px}.library-toolbar{align-items:stretch;flex-direction:column}.lesson-mini-options{grid-template-columns:1fr}.visual-followup{align-items:flex-start;flex-direction:column}.visual-followup .button{margin-left:0}.dna-facts{grid-template-columns:1fr 1fr}.dna-facts>div:first-child{grid-column:1/-1}.mitosis-actions{flex-wrap:wrap}.v2-module-grid .module-card{min-height:170px}}
 @media(prefers-reduced-motion:reduce){.v2-hero-visual .orbit-one,.v2-hero-visual .orbit-two,.v2-hero-visual .central-orb,.dna-pair,.v2-module-grid .module-card{animation:none!important}.lesson-card,.v2-module-grid .module-card{transition:none!important}}
+
+/* Tabla periódica completa: respeta grupos y permite explorar horizontalmente */
+.periodic-controls{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.periodic-controls .search{flex:1;margin-bottom:0;min-width:170px}
+.periodic-controls select{background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;max-width:240px;min-width:160px}
+.periodic-controls>span{color:var(--muted);font-size:11px;font-weight:800;white-space:nowrap}
+.periodic-scroll{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px;box-shadow:0 8px 24px #16344709}
+.periodic-table.periodic-table-full{display:grid;grid-template-columns:repeat(18,minmax(44px,1fr));grid-template-rows:repeat(7,64px) 20px repeat(2,64px);min-width:885px;gap:3px}
+.periodic-table-full .element-cell{grid-column:var(--column);grid-row:var(--row);min-height:0;min-width:0;gap:0;position:relative;transition:opacity .15s,transform .15s,box-shadow .15s}
+.periodic-table-full .element-cell:hover{transform:translateY(-2px);z-index:2;box-shadow:0 4px 13px #173b4c2c}
+.periodic-table-full .element-cell small{font-size:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.periodic-table-full .element-cell strong{font-size:18px;line-height:1.4}
+.periodic-table-full .element-cell.dimmed{opacity:.12}
+.periodic-table-full .element-cell.selected{outline:3px solid #008e81;z-index:1;opacity:1}
+.element-source{grid-column:1/-1;color:#098f79;text-decoration:none;font-size:12px;font-weight:800;margin-top:12px}
+.element-source:hover{text-decoration:underline}
+body.dark-theme .periodic-scroll,body.dark-theme .periodic-controls select{background:#162b3b;color:#e4f1f8;border-color:#2c4657}
+body.dark-theme .element-source{color:#74e7c5}
+@media(max-width:750px){.periodic-controls{flex-wrap:wrap}.periodic-controls .search{flex-basis:100%}.periodic-controls select{flex:1}}
