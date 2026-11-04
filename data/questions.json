@@ -1,0 +1,91 @@
+[
+  {
+    "q": "¿Cuál es el número atómico del oxígeno?",
+    "o": ["6", "8", "12", "16"],
+    "a": 1,
+    "x": "El oxígeno tiene ocho protones, por eso su número atómico es 8.",
+    "lesson": "atomos"
+  },
+  {
+    "q": "¿Dónde está la mayor parte del ADN de una célula vegetal?",
+    "o": ["En la pared", "En la vacuola", "En el núcleo", "En el citosol"],
+    "a": 2,
+    "x": "El núcleo contiene la mayor parte del ADN; cloroplastos y mitocondrias también poseen ADN.",
+    "lesson": "celulas"
+  },
+  {
+    "q": "¿Qué proceso utiliza energía luminosa para producir compuestos orgánicos?",
+    "o": ["Fermentación", "Fotosíntesis", "Digestión", "Evaporación"],
+    "a": 1,
+    "x": "La fotosíntesis transforma energía luminosa en química.",
+    "lesson": "fotosintesis"
+  },
+  {
+    "q": "¿Cuál es un hongo?",
+    "o": ["Sábila", "Ajolote", "Champiñón", "Mariposa"],
+    "a": 2,
+    "x": "Agaricus bisporus pertenece al reino Fungi.",
+    "lesson": "hongos"
+  },
+  {
+    "q": "¿Qué molécula conserva información genética en las células?",
+    "o": ["ATP", "ADN", "Glucosa", "Clorofila"],
+    "a": 1,
+    "x": "El ADN conserva información hereditaria; el ATP tiene una función energética diferente.",
+    "lesson": "adn"
+  },
+  {
+    "q": "¿Cuál es la unidad estructural y funcional básica de la vida?",
+    "o": ["Tejido", "Órgano", "Célula", "Átomo"],
+    "a": 2,
+    "x": "Los seres vivos están formados por una o más células.",
+    "lesson": "celulas"
+  },
+  {
+    "q": "¿Qué orgánulo participa en respiración celular aerobia eucariota?",
+    "o": ["Mitocondria", "Vacuola", "Ribosoma", "Pared celular"],
+    "a": 0,
+    "x": "La mitocondria participa en oxidación de nutrientes y producción de ATP.",
+    "lesson": "respiracion"
+  },
+  {
+    "q": "¿Cuál es el símbolo químico del hierro?",
+    "o": ["H", "He", "Fe", "Ir"],
+    "a": 2,
+    "x": "Fe deriva del nombre latino ferrum.",
+    "lesson": "atomos"
+  },
+  {
+    "q": "¿Cuál es un mecanismo de reproducción asexual?",
+    "o": ["Fecundación", "Gemación de levaduras", "Fusión de gametos", "Fecundación externa"],
+    "a": 1,
+    "x": "La gemación produce nuevas células sin fusión de gametos.",
+    "lesson": "hongos"
+  },
+  {
+    "q": "¿Qué estudia la ecología?",
+    "o": [
+      "Relaciones entre seres vivos y ambiente",
+      "Solo genes",
+      "Solo minerales",
+      "Solo planetas"
+    ],
+    "a": 0,
+    "x": "La ecología estudia interacciones entre organismos y ambiente.",
+    "lesson": "ecosistemas"
+  },
+  {
+    "q": "En Aa × Aa, ¿cuál es la probabilidad de aa?",
+    "o": ["0 %", "25 %", "50 %", "75 %"],
+    "a": 1,
+    "x": "Una de las cuatro combinaciones equiprobables es aa.",
+    "lesson": "mendel"
+  },
+  {
+    "q": "¿Qué proceso reduce la ploidía?",
+    "o": ["Mitosis", "Fotosíntesis", "Meiosis", "Fermentación"],
+    "a": 2,
+    "x": "La meiosis separa homólogos y reduce el número de juegos cromosómicos.",
+    "lesson": "meiosis"
+  }
+]

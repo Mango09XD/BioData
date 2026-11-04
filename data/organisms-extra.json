@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Arquea de salinas",
+    "scientific": "Haloferax volcanii",
+    "type": "Arquea",
+    "summary": "Arquea halófila con células de formas variables que prospera en medios muy salinos.",
+    "habitat": "Salinas y aguas hipersalinas.",
+    "nutrition": "Quimioorganoheterótrofa: utiliza compuestos orgánicos.",
+    "reproduction": "División celular asexual.",
+    "facts": "Fue aislada de sedimentos del mar Muerto; es un organismo modelo para estudiar arqueas."
+  },
+  {
+    "name": "Metanógeno intestinal",
+    "scientific": "Methanobrevibacter smithii",
+    "type": "Arquea",
+    "summary": "Arquea anaerobia que produce metano en el intestino humano.",
+    "habitat": "Intestino de muchas personas, con abundancia variable.",
+    "nutrition": "Utiliza hidrógeno y dióxido de carbono en la metanogénesis.",
+    "reproduction": "División celular asexual.",
+    "facts": "No es una bacteria. Consume productos de otros microorganismos e integra redes metabólicas."
+  },
+  {
+    "name": "Arquea termoacidófila",
+    "scientific": "Sulfolobus acidocaldarius",
+    "type": "Arquea",
+    "summary": "Arquea adaptada a ambientes calientes y ácidos.",
+    "habitat": "Fuentes termales ácidas.",
+    "nutrition": "Puede obtener energía de compuestos de azufre y utilizar sustratos orgánicos según las condiciones.",
+    "reproduction": "División celular.",
+    "facts": "Su membrana contiene lípidos unidos por enlaces éter, característicos de las arqueas."
+  },
+  {
+    "name": "Euglena",
+    "scientific": "Euglena gracilis",
+    "type": "Protista",
+    "summary": "Eucariota unicelular flagelado con cloroplastos y una película flexible.",
+    "habitat": "Aguas dulces, frecuentemente con nutrientes orgánicos.",
+    "nutrition": "Mixótrofa: puede realizar fotosíntesis y aprovechar compuestos orgánicos.",
+    "reproduction": "Fisión binaria longitudinal.",
+    "facts": "Una mancha ocular y estructuras fotosensoras participan en su respuesta a la luz."
+  },
+  {
+    "name": "Diatomea modelo",
+    "scientific": "Phaeodactylum tricornutum",
+    "type": "Protista",
+    "summary": "Microalga marina usada para investigar fotosíntesis y metabolismo.",
+    "habitat": "Ambientes marinos costeros.",
+    "nutrition": "Principalmente fotoautótrofa.",
+    "reproduction": "Principalmente divisiones mitóticas.",
+    "facts": "Presenta formas celulares distintas; su silicificación es menos intensa que la de muchas otras diatomeas."
+  },
+  {
+    "name": "Ameba",
+    "scientific": "Amoeba proteus",
+    "type": "Protista",
+    "summary": "Protista unicelular que cambia de forma mediante pseudópodos.",
+    "habitat": "Aguas dulces y vegetación sumergida.",
+    "nutrition": "Heterótrofa por fagocitosis de microorganismos y partículas.",
+    "reproduction": "Fisión binaria.",
+    "facts": "Sus vacuolas contráctiles participan en expulsar el exceso de agua."
+  },
+  {
+    "name": "Cianobacteria filamentosa",
+    "scientific": "Nostoc commune",
+    "type": "Bacteria",
+    "summary": "Bacteria fotosintética que forma filamentos en colonias gelatinosas.",
+    "habitat": "Suelos húmedos, rocas y superficies expuestas a ciclos de humedad.",
+    "nutrition": "Fotoautótrofa; puede fijar nitrógeno atmosférico en heterocistos.",
+    "reproduction": "Fragmentación de filamentos, entre otros mecanismos asexuales.",
+    "facts": "Aunque se le ha llamado alga verdeazulada, pertenece al dominio Bacteria."
+  },
+  {
+    "name": "Bacilo del suelo",
+    "scientific": "Bacillus subtilis",
+    "type": "Bacteria",
+    "summary": "Bacteria del suelo capaz de formar endosporas resistentes.",
+    "habitat": "Suelo y superficies asociadas a plantas.",
+    "nutrition": "Quimioorganoheterótrofa.",
+    "reproduction": "Fisión binaria; las endosporas son estructuras de supervivencia, no de multiplicación.",
+    "facts": "Se utiliza para estudiar diferenciación celular y formación de biopelículas."
+  },
+  {
+    "name": "Arabidopsis",
+    "scientific": "Arabidopsis thaliana",
+    "type": "Planta",
+    "summary": "Pequeña planta con flores, de ciclo corto y uso extendido en genética vegetal.",
+    "habitat": "Suelos abiertos y alterados; también laboratorios de investigación.",
+    "nutrition": "Fotoautótrofa.",
+    "reproduction": "Semillas; frecuente autopolinización.",
+    "facts": "Su genoma fue el primero secuenciado completamente en una planta con flores."
+  },
+  {
+    "name": "Helecho común",
+    "scientific": "Pteridium aquilinum",
+    "type": "Planta",
+    "summary": "Planta vascular sin flores que presenta grandes frondes.",
+    "habitat": "Claros de bosques, pastizales y terrenos perturbados.",
+    "nutrition": "Fotoautótrofa.",
+    "reproduction": "Esporas y expansión de rizomas; alterna fases de esporófito y gametófito.",
+    "facts": "La fecundación requiere agua para el desplazamiento de gametos masculinos."
+  },
+  {
+    "name": "Mosca de la fruta",
+    "scientific": "Drosophila melanogaster",
+    "type": "Animal",
+    "summary": "Insecto de ciclo rápido fundamental para la investigación genética.",
+    "habitat": "Ambientes asociados a frutas maduras y en fermentación.",
+    "nutrition": "Consume microorganismos y sustratos de frutos en descomposición.",
+    "reproduction": "Sexual, ovípara, con metamorfosis completa.",
+    "facts": "Tiene cuatro pares de cromosomas y ha ayudado a estudiar la herencia ligada al sexo."
+  },
+  {
+    "name": "Coral cuerno de alce",
+    "scientific": "Acropora palmata",
+    "type": "Animal",
+    "summary": "Cnidario colonial constructor de arrecifes con ramas aplanadas.",
+    "habitat": "Arrecifes someros del Caribe.",
+    "nutrition": "Obtiene carbono de algas simbiontes y captura partículas y pequeños organismos.",
+    "reproduction": "Sexual por desove y asexual por fragmentación.",
+    "facts": "La pérdida de simbiontes o sus pigmentos causa el aspecto pálido del blanqueamiento."
+  },
+  {
+    "name": "Hongo ostra",
+    "scientific": "Pleurotus ostreatus",
+    "type": "Hongo",
+    "summary": "Hongo que degrada madera y forma cuerpos fructíferos en forma de abanico.",
+    "habitat": "Troncos de árboles y sustratos lignocelulósicos.",
+    "nutrition": "Saprótrófa por digestión externa y absorción.",
+    "reproduction": "Basidiosporas producidas en las láminas.",
+    "facts": "Sus enzimas permiten descomponer componentes de la pared vegetal."
+  }
+]

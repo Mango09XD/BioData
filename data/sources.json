@@ -1,0 +1,58 @@
+[
+  {
+    "id": "openstax",
+    "title": "Biology 2e",
+    "institution": "OpenStax · Rice University",
+    "url": "https://openstax.org/books/biology-2e/pages/1-introduction",
+    "scope": "Biología celular, metabolismo, genética, evolución y ecología. Las lecciones incluyen enlaces a capítulos específicos."
+  },
+  {
+    "id": "pubchem",
+    "title": "Periodic Table of Elements",
+    "institution": "PubChem · National Library of Medicine / NIH",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/periodic-table/",
+    "scope": "Datos importados: masas, configuraciones electrónicas y propiedades de 118 elementos. Copia local descargada el 4 de noviembre de 2026."
+  },
+  {
+    "id": "iupac",
+    "title": "Periodic Table of Elements",
+    "institution": "IUPAC",
+    "url": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+    "scope": "Nombres, símbolos y convenciones de la tabla. Los valores sin peso atómico estándar requieren distinguir masa de isótopo y peso atómico."
+  },
+  {
+    "id": "ncbi",
+    "title": "The Genetic Codes",
+    "institution": "NCBI · NIH",
+    "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi",
+    "scope": "Código genético estándar para el traductor didáctico. Otros códigos existen en mitocondrias y determinados organismos."
+  },
+  {
+    "id": "nhgri",
+    "title": "Talking Glossary of Genomic and Genetic Terms",
+    "institution": "National Human Genome Research Institute",
+    "url": "https://www.genome.gov/genetics-glossary",
+    "scope": "Definiciones y relaciones de genes, ADN, herencia y expresión génica."
+  },
+  {
+    "id": "gbif",
+    "title": "GBIF Species",
+    "institution": "Global Biodiversity Information Facility",
+    "url": "https://www.gbif.org/species/search",
+    "scope": "Consulta de nombres científicos y clasificación. Las fichas enlazan búsquedas por taxón. Los sistemas taxonómicos difieren y cambian."
+  },
+  {
+    "id": "adl",
+    "title": "Animal Diversity Web",
+    "institution": "University of Michigan Museum of Zoology",
+    "url": "https://animaldiversity.org/",
+    "scope": "Biología de animales. Enlaces de consulta específica en las fichas de especies animales."
+  },
+  {
+    "id": "kew",
+    "title": "Plants of the World Online",
+    "institution": "Royal Botanic Gardens, Kew",
+    "url": "https://powo.science.kew.org/",
+    "scope": "Nombres aceptados y distribución de plantas. Las fichas enlazan consultas específicas."
+  }
+]

@@ -1,0 +1,302 @@
+{
+  "Panthera onca": [
+    "Eukarya",
+    "Animalia",
+    "Chordata",
+    "Mammalia",
+    "Carnivora",
+    "Felidae",
+    "Pelaje manchado y mandíbula potente; el camuflaje facilita la caza.",
+    "Depredador que participa en la regulación de redes tróficas."
+  ],
+  "Rhizophora mangle": [
+    "Eukarya",
+    "Plantae",
+    "Tracheophyta",
+    "Magnoliopsida",
+    "Malpighiales",
+    "Rhizophoraceae",
+    "Raíces de soporte y exclusión de sal en las raíces.",
+    "Refugio de juveniles marinos, protección costera y almacenamiento de carbono."
+  ],
+  "Chelonia mydas": [
+    "Eukarya",
+    "Animalia",
+    "Chordata",
+    "Reptilia",
+    "Testudines",
+    "Cheloniidae",
+    "Aletas adaptadas a la natación; migraciones entre áreas de alimentación y anidación.",
+    "El pastoreo de muchas poblaciones modifica comunidades de pastos marinos."
+  ],
+  "Zea mays": [
+    "Eukarya",
+    "Plantae",
+    "Tracheophyta",
+    "Liliopsida",
+    "Poales",
+    "Poaceae",
+    "Metabolismo C4 que concentra CO₂ y reduce la fotorrespiración.",
+    "Cultivo alimentario; las variedades conservan diversidad genética agrícola."
+  ],
+  "Octopus vulgaris": [
+    "Eukarya",
+    "Animalia",
+    "Mollusca",
+    "Cephalopoda",
+    "Octopoda",
+    "Octopodidae",
+    "Cromatóforos y cambios de textura para camuflarse.",
+    "Depredador de invertebrados y presa de peces y mamíferos marinos."
+  ],
+  "Penicillium spp.": [
+    "Eukarya",
+    "Fungi",
+    "Ascomycota",
+    "Eurotiomycetes",
+    "Eurotiales",
+    "Aspergillaceae",
+    "Hifas que penetran sustratos; esporas que se dispersan.",
+    "Descomposición de materia orgánica; las funciones varían entre especies."
+  ],
+  "Paramecium caudatum": [
+    "Eukarya",
+    "Protista (agrupación didáctica)",
+    "Ciliophora",
+    "Oligohymenophorea",
+    "Peniculida",
+    "Parameciidae",
+    "Cilios para movimiento y vacuolas contráctiles para osmorregulación.",
+    "Consume bacterias y forma parte de redes alimentarias acuáticas."
+  ],
+  "Escherichia coli": [
+    "Bacteria",
+    "Sin reino en este esquema",
+    "Pseudomonadota",
+    "Gammaproteobacteria",
+    "Enterobacterales",
+    "Enterobacteriaceae",
+    "Metabolismo flexible en presencia o ausencia de oxígeno.",
+    "Integra comunidades intestinales; sus efectos dependen de la cepa."
+  ],
+  "Aloe vera": [
+    "Eukarya",
+    "Plantae",
+    "Tracheophyta",
+    "Liliopsida",
+    "Asparagales",
+    "Asphodelaceae",
+    "Hojas suculentas y metabolismo CAM que reduce pérdida de agua.",
+    "Planta cultivada; flores aprovechadas por polinizadores en condiciones adecuadas."
+  ],
+  "Helianthus annuus": [
+    "Eukarya",
+    "Plantae",
+    "Tracheophyta",
+    "Magnoliopsida",
+    "Asterales",
+    "Asteraceae",
+    "Capítulos con numerosas flores y raíces que aprovechan humedad del suelo.",
+    "Aporta polen, néctar y semillas a redes alimentarias."
+  ],
+  "Opuntia ficus-indica": [
+    "Eukarya",
+    "Plantae",
+    "Tracheophyta",
+    "Magnoliopsida",
+    "Caryophyllales",
+    "Cactaceae",
+    "Metabolismo CAM, tallos suculentos y hojas reducidas a espinas.",
+    "Provee frutos, refugio y recursos alimentarios en ambientes secos."
+  ],
+  "Ambystoma mexicanum": [
+    "Eukarya",
+    "Animalia",
+    "Chordata",
+    "Amphibia",
+    "Caudata",
+    "Ambystomatidae",
+    "Conservación de branquias externas y vida acuática en la madurez.",
+    "Depredador y presa en redes acuáticas de Xochimilco."
+  ],
+  "Danaus plexippus": [
+    "Eukarya",
+    "Animalia",
+    "Arthropoda",
+    "Insecta",
+    "Lepidoptera",
+    "Nymphalidae",
+    "Algunas poblaciones realizan migraciones estacionales extensas.",
+    "Integra redes de herbivoría, polinización y depredación."
+  ],
+  "Apis mellifera": [
+    "Eukarya",
+    "Animalia",
+    "Arthropoda",
+    "Insecta",
+    "Hymenoptera",
+    "Apidae",
+    "Organización social y estructuras para transportar polen.",
+    "Polinizadora de cultivos; su presencia puede afectar polinizadores nativos."
+  ],
+  "Agaricus bisporus": [
+    "Eukarya",
+    "Fungi",
+    "Basidiomycota",
+    "Agaricomycetes",
+    "Agaricales",
+    "Agaricaceae",
+    "Micelio que secreta enzimas y absorbe nutrientes del sustrato.",
+    "Participa en la transformación de materia orgánica."
+  ],
+  "Saccharomyces cerevisiae": [
+    "Eukarya",
+    "Fungi",
+    "Ascomycota",
+    "Saccharomycetes",
+    "Saccharomycetales",
+    "Saccharomycetaceae",
+    "Fermentación de azúcares y tolerancia relativa al etanol.",
+    "Transforma recursos ricos en azúcares y participa en fermentaciones."
+  ],
+  "Lactobacillus spp.": [
+    "Bacteria",
+    "Sin reino en este esquema",
+    "Bacillota",
+    "Bacilli",
+    "Lactobacillales",
+    "Lactobacillaceae",
+    "Fermentación de carbohidratos que acidifica el ambiente.",
+    "Integrantes de microbiotas y fermentaciones; no todas las cepas son probióticas."
+  ],
+  "Haloferax volcanii": [
+    "Archaea",
+    "Sin reino en este esquema",
+    "Euryarchaeota (clasificación tradicional)",
+    "Halobacteria",
+    "Haloferacales",
+    "Haloferacaceae",
+    "Proteínas y regulación osmótica adaptadas a alta salinidad.",
+    "Procesa carbono orgánico en ambientes hipersalinos."
+  ],
+  "Methanobrevibacter smithii": [
+    "Archaea",
+    "Sin reino en este esquema",
+    "Euryarchaeota (clasificación tradicional)",
+    "Methanobacteria",
+    "Methanobacteriales",
+    "Methanobacteriaceae",
+    "Metabolismo metanógeno en ausencia de oxígeno.",
+    "Consume hidrógeno y conecta procesos de fermentación intestinal."
+  ],
+  "Sulfolobus acidocaldarius": [
+    "Archaea",
+    "Sin reino en este esquema",
+    "Thermoproteota",
+    "Thermoprotei",
+    "Sulfolobales",
+    "Sulfolobaceae",
+    "Membranas y proteínas resistentes a calor y acidez.",
+    "Participa en transformaciones de azufre en sistemas geotérmicos."
+  ],
+  "Euglena gracilis": [
+    "Eukarya",
+    "Protista (agrupación didáctica)",
+    "Euglenozoa",
+    "Euglenophyceae",
+    "Euglenales",
+    "Euglenaceae",
+    "Flexibilidad metabólica y flagelo para desplazarse.",
+    "Productor y consumidor de recursos en ambientes acuáticos."
+  ],
+  "Phaeodactylum tricornutum": [
+    "Eukarya",
+    "Chromista (clasificación convencional)",
+    "Bacillariophyta",
+    "Bacillariophyceae",
+    "Bacillariales",
+    "Phaeodactylaceae",
+    "Variación de forma y metabolismo adaptado a cambios ambientales.",
+    "Fija carbono y forma parte del fitoplancton marino."
+  ],
+  "Amoeba proteus": [
+    "Eukarya",
+    "Protista (agrupación didáctica)",
+    "Amoebozoa",
+    "Tubulinea",
+    "Tubulinida",
+    "Amoebidae",
+    "Pseudópodos para desplazamiento y fagocitosis.",
+    "Consume microorganismos y transfiere materia en redes acuáticas."
+  ],
+  "Nostoc commune": [
+    "Bacteria",
+    "Sin reino en este esquema",
+    "Cyanobacteriota",
+    "Cyanophyceae",
+    "Nostocales",
+    "Nostocaceae",
+    "Matriz gelatinosa resistente a desecación; heterocistos para fijar nitrógeno.",
+    "Aporta carbono fijado y nitrógeno a comunidades terrestres."
+  ],
+  "Bacillus subtilis": [
+    "Bacteria",
+    "Sin reino en este esquema",
+    "Bacillota",
+    "Bacilli",
+    "Bacillales",
+    "Bacillaceae",
+    "Endosporas resistentes a condiciones desfavorables.",
+    "Descomposición y relaciones con plantas y microorganismos del suelo."
+  ],
+  "Arabidopsis thaliana": [
+    "Eukarya",
+    "Plantae",
+    "Tracheophyta",
+    "Magnoliopsida",
+    "Brassicales",
+    "Brassicaceae",
+    "Ciclo corto y producción de numerosas semillas.",
+    "Integra comunidades de plantas anuales y es un recurso experimental."
+  ],
+  "Pteridium aquilinum": [
+    "Eukarya",
+    "Plantae",
+    "Tracheophyta",
+    "Polypodiopsida",
+    "Polypodiales",
+    "Dennstaedtiaceae",
+    "Rizomas subterráneos y dispersión de esporas.",
+    "Proporciona cobertura; puede dominar comunidades alteradas."
+  ],
+  "Drosophila melanogaster": [
+    "Eukarya",
+    "Animalia",
+    "Arthropoda",
+    "Insecta",
+    "Diptera",
+    "Drosophilidae",
+    "Ciclo corto y detección de compuestos de fermentación.",
+    "Consume microorganismos, recicla recursos y sirve como presa."
+  ],
+  "Acropora palmata": [
+    "Eukarya",
+    "Animalia",
+    "Cnidaria",
+    "Anthozoa",
+    "Scleractinia",
+    "Acroporidae",
+    "Simbiosis con dinoflagelados y esqueleto de carbonato de calcio.",
+    "Construye estructura de arrecifes y amortigua el oleaje."
+  ],
+  "Pleurotus ostreatus": [
+    "Eukarya",
+    "Fungi",
+    "Basidiomycota",
+    "Agaricomycetes",
+    "Agaricales",
+    "Pleurotaceae",
+    "Enzimas extracelulares que degradan componentes de la madera.",
+    "Recicla carbono y nutrientes de restos vegetales."
+  ]
+}
