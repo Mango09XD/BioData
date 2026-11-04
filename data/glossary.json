@@ -1,0 +1,314 @@
+[
+  {
+    "term": "ADN",
+    "definition": "Ácido desoxirribonucleico: polímero de nucleótidos que conserva información hereditaria.",
+    "related": ["Gen", "Cromosoma", "Nucleótido"],
+    "lesson": "adn"
+  },
+  {
+    "term": "ARN",
+    "definition": "Ácido ribonucleico que participa en expresión, regulación y otras funciones; no todo ARN se traduce.",
+    "related": ["Transcripción", "Traducción", "Ribosoma"],
+    "lesson": "transcripcion"
+  },
+  {
+    "term": "Alelo",
+    "definition": "Una de las variantes de una secuencia en un lugar del genoma.",
+    "related": ["Gen", "Genotipo", "Fenotipo"],
+    "lesson": "mendel"
+  },
+  {
+    "term": "Gen",
+    "definition": "Región de ADN que contribuye a producir un producto funcional, como ARN o proteína.",
+    "related": ["ADN", "Alelo", "Transcripción"],
+    "lesson": "adn"
+  },
+  {
+    "term": "Cromosoma",
+    "definition": "Estructura que organiza una molécula de ADN con proteínas asociadas.",
+    "related": ["ADN", "Meiosis", "Mitosis"],
+    "lesson": "adn"
+  },
+  {
+    "term": "Genotipo",
+    "definition": "Conjunto de variantes genéticas consideradas en un organismo o región concreta.",
+    "related": ["Alelo", "Fenotipo"],
+    "lesson": "mendel"
+  },
+  {
+    "term": "Fenotipo",
+    "definition": "Características observables que resultan del genotipo, el ambiente y sus interacciones.",
+    "related": ["Genotipo", "Selección natural"],
+    "lesson": "herencia-compleja"
+  },
+  {
+    "term": "Mutación",
+    "definition": "Cambio en una secuencia genética; sus efectos dependen del contexto.",
+    "related": ["ADN", "Replicación", "Selección natural"],
+    "lesson": "mutaciones"
+  },
+  {
+    "term": "Replicación",
+    "definition": "Síntesis de copias de ADN utilizando cadenas anteriores como moldes.",
+    "related": ["ADN", "Nucleótido"],
+    "lesson": "replicacion"
+  },
+  {
+    "term": "Transcripción",
+    "definition": "Síntesis de ARN utilizando una cadena de ADN como molde.",
+    "related": ["ARN", "Gen", "Traducción"],
+    "lesson": "transcripcion"
+  },
+  {
+    "term": "Traducción",
+    "definition": "Síntesis de una cadena polipeptídica siguiendo los codones de un ARN mensajero.",
+    "related": ["Codón", "Ribosoma", "Proteína"],
+    "lesson": "traduccion"
+  },
+  {
+    "term": "Codón",
+    "definition": "Triplete de bases del ARN que especifica un aminoácido o una señal de terminación en un código genético.",
+    "related": ["ARN", "Traducción"],
+    "lesson": "traduccion"
+  },
+  {
+    "term": "Nucleótido",
+    "definition": "Unidad formada por azúcar, fosfato y base nitrogenada; integra ADN y ARN.",
+    "related": ["ADN", "ARN", "ATP"],
+    "lesson": "adn"
+  },
+  {
+    "term": "Mitosis",
+    "definition": "División nuclear eucariota que distribuye cromosomas duplicados a dos núcleos.",
+    "related": ["Meiosis", "Cromosoma"],
+    "lesson": "mitosis"
+  },
+  {
+    "term": "Meiosis",
+    "definition": "Dos divisiones posteriores a una replicación que reducen la ploidía y generan variación.",
+    "related": ["Haploide", "Diploide", "Cromosoma"],
+    "lesson": "meiosis"
+  },
+  {
+    "term": "Haploide",
+    "definition": "Que posee un juego de cromosomas, representado como n.",
+    "related": ["Diploide", "Meiosis"],
+    "lesson": "meiosis"
+  },
+  {
+    "term": "Diploide",
+    "definition": "Que posee dos juegos de cromosomas, representados como 2n.",
+    "related": ["Haploide", "Meiosis"],
+    "lesson": "meiosis"
+  },
+  {
+    "term": "Procariota",
+    "definition": "Célula sin núcleo rodeado por membrana; incluye bacterias y arqueas.",
+    "related": ["Arquea", "Nucleoide", "Eucariota"],
+    "lesson": "bacterias"
+  },
+  {
+    "term": "Eucariota",
+    "definition": "Célula con núcleo delimitado por membrana y organización compartimentada.",
+    "related": ["Procariota", "Protista", "Hongo"],
+    "lesson": "celulas"
+  },
+  {
+    "term": "Arquea",
+    "definition": "Organismo procariota del dominio Archaea, molecularmente distinto de Bacteria.",
+    "related": ["Procariota", "Filogenia"],
+    "lesson": "arqueas"
+  },
+  {
+    "term": "Protista",
+    "definition": "Agrupación didáctica de diversos eucariotas que no forma un único linaje natural.",
+    "related": ["Eucariota", "Filogenia"],
+    "lesson": "protistas"
+  },
+  {
+    "term": "Hongo",
+    "definition": "Eucariota heterótrofo que obtiene nutrientes por absorción, frecuentemente tras digestión externa.",
+    "related": ["Enzima", "Espora", "Descomponedor"],
+    "lesson": "hongos"
+  },
+  {
+    "term": "Espora",
+    "definition": "Unidad reproductiva o de dispersión en diversos organismos; las endosporas bacterianas son estructuras de supervivencia.",
+    "related": ["Hongo", "Procariota"],
+    "lesson": "hongos"
+  },
+  {
+    "term": "Nucleoide",
+    "definition": "Región de una célula procariota donde se organiza su ADN cromosómico.",
+    "related": ["ADN", "Procariota"],
+    "lesson": "bacterias"
+  },
+  {
+    "term": "Ribosoma",
+    "definition": "Complejo de ARN y proteínas que realiza la traducción.",
+    "related": ["ARN", "Traducción", "Proteína"],
+    "lesson": "traduccion"
+  },
+  {
+    "term": "Membrana plasmática",
+    "definition": "Bicapa lipídica con proteínas que delimita la célula y participa en transporte y comunicación.",
+    "related": ["Ósmosis", "Difusión", "Homeostasis"],
+    "lesson": "membrana"
+  },
+  {
+    "term": "Ósmosis",
+    "definition": "Movimiento neto de agua a través de una membrana selectivamente permeable según diferencias de potencial químico.",
+    "related": ["Agua", "Gradiente", "Membrana plasmática"],
+    "lesson": "membrana"
+  },
+  {
+    "term": "Difusión",
+    "definition": "Dispersión por movimiento molecular aleatorio; un gradiente puede producir flujo neto.",
+    "related": ["Gradiente", "Ósmosis"],
+    "lesson": "membrana"
+  },
+  {
+    "term": "Gradiente",
+    "definition": "Variación de una magnitud, como concentración o potencial eléctrico, con la posición.",
+    "related": ["Difusión", "Homeostasis"],
+    "lesson": "membrana"
+  },
+  {
+    "term": "Fotosíntesis",
+    "definition": "Transformación de energía luminosa en química; la fotosíntesis oxigénica usa agua y libera oxígeno.",
+    "related": ["ATP", "Ecosistema", "Metabolismo"],
+    "lesson": "fotosintesis"
+  },
+  {
+    "term": "ATP",
+    "definition": "Adenosín trifosfato, nucleótido que acopla procesos de transferencia de energía celular.",
+    "related": ["Nucleótido", "Metabolismo"],
+    "lesson": "respiracion"
+  },
+  {
+    "term": "Metabolismo",
+    "definition": "Conjunto de reacciones químicas interconectadas de una célula u organismo.",
+    "related": ["Enzima", "ATP", "Fotosíntesis"],
+    "lesson": "respiracion"
+  },
+  {
+    "term": "Enzima",
+    "definition": "Catalizador biológico que acelera una reacción sin cambiar su equilibrio.",
+    "related": ["Sustrato", "Proteína", "Metabolismo"],
+    "lesson": "enzimas"
+  },
+  {
+    "term": "Sustrato",
+    "definition": "Molécula sobre la que actúa una enzima; en ecología también designa una superficie o material de soporte.",
+    "related": ["Enzima", "Metabolismo"],
+    "lesson": "enzimas"
+  },
+  {
+    "term": "Proteína",
+    "definition": "Macromolécula de aminoácidos con funciones estructurales, catalíticas, reguladoras y de transporte.",
+    "related": ["Enzima", "Traducción"],
+    "lesson": "biomoleculas"
+  },
+  {
+    "term": "pH",
+    "definition": "Logaritmo negativo de la actividad de iones hidrógeno; expresa acidez en una escala logarítmica.",
+    "related": ["Agua", "Ion", "Homeostasis"],
+    "lesson": "ph"
+  },
+  {
+    "term": "Agua",
+    "definition": "Molécula polar H₂O con propiedades esenciales para reacciones, transporte y regulación térmica.",
+    "related": ["Polaridad", "Ósmosis", "pH"],
+    "lesson": "ph"
+  },
+  {
+    "term": "Polaridad",
+    "definition": "Distribución desigual de carga en un enlace o molécula.",
+    "related": ["Agua", "Enlace covalente"],
+    "lesson": "enlaces"
+  },
+  {
+    "term": "Ion",
+    "definition": "Átomo o grupo de átomos con carga eléctrica neta.",
+    "related": ["pH", "Gradiente"],
+    "lesson": "atomos"
+  },
+  {
+    "term": "Enlace covalente",
+    "definition": "Enlace químico en el que átomos comparten electrones.",
+    "related": ["Polaridad", "Proteína"],
+    "lesson": "enlaces"
+  },
+  {
+    "term": "Ecosistema",
+    "definition": "Organismos y ambiente físico conectados por interacciones y flujos de materia y energía.",
+    "related": ["Población", "Descomponedor", "Fotosíntesis"],
+    "lesson": "ecosistemas"
+  },
+  {
+    "term": "Población",
+    "definition": "Individuos de una misma especie que ocupan un área en un intervalo considerado.",
+    "related": ["Capacidad de carga", "Selección natural"],
+    "lesson": "poblaciones"
+  },
+  {
+    "term": "Capacidad de carga",
+    "definition": "Abundancia sostenible idealizada bajo ciertas condiciones; puede variar en ambientes reales.",
+    "related": ["Población", "Modelo científico"],
+    "lesson": "poblaciones"
+  },
+  {
+    "term": "Descomponedor",
+    "definition": "Organismo que transforma materia orgánica y participa en el reciclaje de nutrientes.",
+    "related": ["Hongo", "Ecosistema"],
+    "lesson": "ecosistemas"
+  },
+  {
+    "term": "Selección natural",
+    "definition": "Diferencias en éxito reproductivo asociadas a variación heredable en un ambiente.",
+    "related": ["Fenotipo", "Mutación", "Población"],
+    "lesson": "evolucion"
+  },
+  {
+    "term": "Filogenia",
+    "definition": "Historia de relaciones evolutivas entre linajes.",
+    "related": ["Arquea", "Protista", "Selección natural"],
+    "lesson": "clasificacion"
+  },
+  {
+    "term": "Microbiota",
+    "definition": "Conjunto de microorganismos de un ambiente definido, como el intestino o el suelo.",
+    "related": ["Arquea", "Procariota", "Ecosistema"],
+    "lesson": "bacterias"
+  },
+  {
+    "term": "Homeostasis",
+    "definition": "Regulación dinámica de variables internas dentro de intervalos funcionales.",
+    "related": ["Membrana plasmática", "pH"],
+    "lesson": "homeostasis"
+  },
+  {
+    "term": "Hipótesis",
+    "definition": "Explicación propuesta que permite derivar consecuencias contrastables.",
+    "related": ["Evidencia", "Variable", "Modelo científico"],
+    "lesson": "metodo"
+  },
+  {
+    "term": "Variable",
+    "definition": "Propiedad que puede cambiar o medirse; puede ser manipulada, medida o controlada.",
+    "related": ["Hipótesis", "Evidencia"],
+    "lesson": "experimentos"
+  },
+  {
+    "term": "Evidencia",
+    "definition": "Observaciones y resultados que permiten evaluar explicaciones.",
+    "related": ["Hipótesis", "Modelo científico"],
+    "lesson": "metodo"
+  },
+  {
+    "term": "Modelo científico",
+    "definition": "Representación simplificada con supuestos explícitos que ayuda a describir o explorar un sistema.",
+    "related": ["Evidencia", "Variable", "Capacidad de carga"],
+    "lesson": "experimentos"
+  }
+]

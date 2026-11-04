@@ -1,0 +1,891 @@
+.related {
+  margin-top: 24px;
+}
+.small {
+  font-size: 11px;
+}
+.organism-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.organism-image {
+  display: block;
+  background: #e0f1ed;
+}
+.organism-image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 165px;
+}
+.organism-copy {
+  padding: 20px;
+}
+.organism-copy h2 {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  margin: 12px 0 5px;
+}
+.organism-copy h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.organism-copy > i {
+  font-size: 11px;
+  color: var(--muted);
+}
+.organism-copy p {
+  font-size: 12px;
+  margin: 12px 0;
+}
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--line);
+  margin-top: 16px;
+  padding-top: 12px;
+}
+.favorite-button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.favorite-button[aria-pressed='true'] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.favorite-button[aria-pressed='true'] .icon {
+  fill: var(--accent-soft);
+  stroke-width: 2.5;
+}
+.favorite-button:hover {
+  border-color: var(--accent);
+}
+.compare-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  cursor: pointer;
+  min-height: 36px;
+}
+.comparison-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 0 0 20px;
+  background: var(--surface-2);
+  padding: 13px 18px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.comparison-bar .button {
+  font-size: 11px;
+}
+.organism-detail-head {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.organism-detail-head img {
+  border-radius: 12px;
+}
+.organism-detail-head p {
+  font-size: 11px;
+}
+.organism-detail-head h2 {
+  margin: 12px 0;
+}
+.taxonomy {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.taxonomy > div,
+.element-properties > div {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-width: 0;
+}
+.taxonomy dt,
+.element-properties dt {
+  font-size: 9px;
+  letter-spacing: 0.3px;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+.taxonomy dd,
+.element-properties dd {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.table-scroll {
+  overflow: auto;
+  margin-top: 18px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+  background: var(--surface);
+  text-align: left;
+}
+caption {
+  text-align: left;
+  font-weight: 600;
+  padding: 12px;
+  color: var(--muted);
+}
+th,
+td {
+  padding: 13px;
+  border: 1px solid var(--line);
+  line-height: 1.7;
+  vertical-align: top;
+}
+th {
+  background: var(--surface-2);
+}
+#comparison {
+  margin-top: 30px;
+  scroll-margin-top: 90px;
+}
+#comparison td {
+  min-width: 200px;
+}
+#comparison th:first-child {
+  min-width: 120px;
+}
+.cell-scene {
+  height: 330px;
+  position: relative;
+  isolation: isolate;
+}
+.cell-outline {
+  position: absolute;
+  inset: 18px 16px;
+  border: 5px solid #4caca4;
+  border-radius: 43% 49% 46% 40%;
+  background: #d3eee4;
+  box-shadow: inset 0 0 0 3px #90d1c2;
+}
+.vegetal .cell-outline {
+  border-radius: 28px;
+  border: 10px solid #518f68;
+  background: #cce9c6;
+}
+.procariota .cell-outline {
+  inset: 60px 15px;
+  border-radius: 100px;
+  background: #bee5e3;
+}
+.cell-hotspot {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #438fab;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0 2px 6px #07344325;
+}
+.cell-hotspot[data-part='nucleus'] {
+  width: 65px;
+  height: 65px;
+  background: #8677b2;
+  font-size: 45px;
+}
+.cell-hotspot[data-part='mitochondria'] {
+  background: #b17c46;
+  width: 53px;
+  border-radius: 40%;
+  font-size: 30px;
+}
+.cell-hotspot[data-part='chloroplast'] {
+  background: #488a57;
+}
+.cell-hotspot[data-part='wall'],
+.cell-hotspot[data-part='membrane'] {
+  background: #276d6b;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+}
+.cell-hotspot[data-part='vacuole'] {
+  background: #7ab6c8;
+  width: 65px;
+  height: 70px;
+}
+.cell-hotspot[data-part='nucleoid'] {
+  background: #657baa;
+  width: 90px;
+  border-radius: 45%;
+  font-size: 24px;
+}
+.cell-hotspot[data-part='ribosome'] {
+  width: 28px;
+  height: 28px;
+  background: #597d65;
+  font-size: 15px;
+}
+.cell-hotspot[aria-pressed='true'] {
+  outline: 3px solid #143b52;
+  outline-offset: 4px;
+}
+.cell-scene-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 10px;
+  color: var(--muted);
+}
+.vacuole-shape {
+  position: absolute;
+  left: 20%;
+  top: 32%;
+  width: 34%;
+  height: 50%;
+  background: #92c8d1;
+  border-radius: 45%;
+  z-index: 0;
+}
+.science-scene {
+  background: #0c2f40;
+  border-radius: 13px;
+  width: 100%;
+  max-height: 360px;
+}
+.stage-chips {
+  margin: 25px 0 0;
+}
+.control-pair {
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+.dna-ladder {
+  max-height: 280px;
+  min-height: 120px;
+  overflow: auto;
+  background: #0b3548;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 17px;
+}
+.base-pair {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translateX(var(--offset));
+  min-height: 18px;
+  color: #aeeed5;
+  font-family: Consolas, monospace;
+}
+.base-pair span {
+  width: 26px;
+  text-align: center;
+  background: #9adfc9;
+  border-radius: 3px;
+  color: #123a44;
+  font-weight: 750;
+  font-size: 12px;
+}
+.base-pair span:last-child {
+  background: #8dbbdc;
+}
+.base-pair i {
+  font-style: normal;
+  color: #c3e8e1;
+}
+.sequence-list {
+  background: var(--surface-2);
+  border-radius: 12px;
+  padding: 16px;
+}
+.sequence-list dt {
+  color: var(--muted);
+  font-size: 10px;
+  margin-bottom: 6px;
+}
+.sequence-list dd {
+  font-family: Consolas, monospace;
+  letter-spacing: 1.5px;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 17px;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.metrics > div {
+  background: var(--surface-2);
+  padding: 12px;
+  border-radius: 9px;
+}
+.metrics strong {
+  font-size: 20px;
+  display: block;
+  color: var(--accent);
+}
+.metrics small {
+  font-size: 9px;
+  display: block;
+  color: var(--muted);
+}
+.codons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+}
+.codons > span {
+  display: grid;
+  text-align: center;
+  font-family: Consolas, monospace;
+  font-size: 11px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 8px;
+}
+.codons b {
+  border-top: 1px solid var(--line);
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.punnett {
+  display: grid;
+  grid-template-columns: 45px 1fr 1fr;
+  gap: 7px;
+  margin: 20px 0;
+}
+.punnett > span,
+.punnett > strong {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--surface-2);
+  min-height: 45px;
+}
+.punnett > strong {
+  min-height: 90px;
+  font-size: 25px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  border: 1px solid var(--line);
+}
+.punnett small {
+  display: block;
+  font-size: 9px;
+  margin-top: 4px;
+}
+.punnett .recessive {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+.lesson-link {
+  color: var(--ink);
+  text-decoration: none;
+}
+.lesson-link span {
+  color: var(--accent);
+  font-size: 12px;
+}
+.periodic-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 13px;
+  padding: 15px;
+}
+.periodic-table {
+  min-width: 920px;
+  display: grid;
+  grid-template-columns: repeat(18, minmax(46px, 1fr));
+  grid-template-rows: repeat(7, 68px) 18px repeat(2, 68px);
+  gap: 4px;
+}
+.element-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b4d7cc;
+  border-radius: 6px;
+  background: #e0f3e9;
+  color: #204c4a;
+  position: relative;
+}
+.element-cell small {
+  font-size: 9px;
+  align-self: start;
+  padding-left: 5px;
+}
+.element-cell strong {
+  font-size: 21px;
+}
+.element-cell span {
+  font-size: 7px;
+  max-width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.element-cell.family-1,
+.element-cell.family-4,
+.element-cell.family-8 {
+  background: #e5e7f7;
+  border-color: #c9cdea;
+}
+.element-cell.family-2,
+.element-cell.family-5 {
+  background: #fff0d1;
+  border-color: #ecd4a4;
+}
+.element-cell.family-3,
+.element-cell.family-6 {
+  background: #d9eff4;
+  border-color: #aad2dc;
+}
+.element-cell.family-7,
+.element-cell.family-9 {
+  background: #f5dfdc;
+  border-color: #dfc2bc;
+}
+.element-cell.dimmed {
+  opacity: 0.18;
+}
+.element-cell[aria-pressed='true'] {
+  outline: 3px solid var(--accent);
+  outline-offset: 0;
+  z-index: 1;
+}
+.element-heading {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 25px;
+}
+.element-heading .favorite-button {
+  margin-left: auto;
+}
+.element-symbol {
+  background: #0c5866;
+  color: #9ef4d8;
+  padding: 12px;
+  border-radius: 12px;
+  min-width: 80px;
+  text-align: center;
+}
+.element-symbol small {
+  display: block;
+  text-align: left;
+  font-size: 10px;
+}
+.element-symbol strong {
+  display: block;
+  font-size: 40px;
+}
+.element-heading h2 {
+  font-size: 30px;
+  margin: 0;
+}
+.element-heading p {
+  font-size: 12px;
+  margin: 4px 0;
+}
+.element-properties {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+.sliders {
+  display: grid;
+  gap: 23px;
+  margin: 18px 0 28px;
+}
+.sliders label {
+  position: relative;
+  padding-top: 3px;
+  padding-right: 0;
+}
+.slider-value {
+  justify-self: end;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  border-radius: 4px;
+  padding: 3px 8px;
+}
+.lab-result {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 18px 0 10px;
+}
+.lab-result strong {
+  font-size: 42px;
+  letter-spacing: -1px;
+  color: var(--accent);
+}
+.lab-result span {
+  font-size: 11px;
+  color: var(--muted);
+}
+#lab-output p {
+  font-size: 12px;
+}
+.plot {
+  width: 100%;
+  min-height: 200px;
+  color: var(--muted);
+  border-radius: 12px;
+  background: var(--surface-2);
+}
+details {
+  margin-top: 15px;
+  font-size: 12px;
+}
+summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 8px;
+}
+.academy-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 25px;
+  background: var(--surface-2);
+}
+.academy-banner p {
+  font-size: 12px;
+  margin: 0;
+}
+.academy-banner .button {
+  white-space: nowrap;
+}
+.lesson-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.lesson-meta small {
+  font-size: 9px;
+  color: var(--muted);
+}
+.lesson-card h2 {
+  font-size: 20px;
+  margin: 20px 0 12px;
+}
+.lesson-card h2 a {
+  text-decoration: none;
+  color: var(--ink);
+}
+.lesson-card p {
+  font-size: 12px;
+}
+.lesson-card {
+  display: flex;
+  flex-direction: column;
+}
+.lesson-card .card-bottom {
+  margin-top: auto;
+}
+.lesson-card .card-bottom small {
+  font-size: 9px;
+  color: var(--muted);
+}
+.reading {
+  max-width: 940px;
+  margin: auto;
+  padding: clamp(22px, 4vw, 48px);
+}
+.lesson-section {
+  margin: 30px 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 25px;
+}
+.lesson-section h2 {
+  font-size: 24px;
+}
+.lesson-section p {
+  font-size: 15px;
+  line-height: 1.95;
+}
+.lesson-check {
+  background: var(--surface-2);
+  padding: 23px;
+  border-radius: 13px;
+  margin-top: 30px;
+}
+.lesson-check h2 {
+  font-size: 20px;
+}
+.quiz-options {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0;
+}
+.quiz-option {
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 15px;
+  font-size: 14px;
+  min-height: 48px;
+}
+.quiz-option:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.quiz-option.correct {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  opacity: 1;
+}
+.quiz-option.incorrect {
+  border-color: var(--danger);
+  color: var(--danger);
+  opacity: 1;
+}
+.challenge {
+  max-width: 800px;
+  margin: auto;
+  padding: clamp(23px, 4vw, 40px);
+}
+.challenge h2 {
+  margin-top: 30px;
+  font-size: 26px;
+  line-height: 1.45;
+}
+.challenge progress {
+  margin-top: 20px;
+}
+.answer-review {
+  margin-top: 35px;
+}
+.answer-review > section {
+  padding: 25px 0;
+  border-top: 1px solid var(--line);
+}
+.answer-review h3 {
+  margin-top: 15px;
+}
+.answer-review p {
+  font-size: 13px;
+}
+.glossary-card h2 {
+  font-size: 21px;
+}
+.glossary-card h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.glossary-card p {
+  font-size: 12px;
+}
+.term-detail h2 {
+  font-size: 32px;
+  margin: 18px 0;
+}
+.term-detail .chips a {
+  text-decoration: none;
+}
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.route-item {
+  padding: 17px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.route-item label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+}
+.route-item a {
+  display: inline-block;
+  margin: 12px 0 0 24px;
+  font-size: 11px;
+}
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.achievement {
+  padding: 20px 15px;
+  opacity: 0.65;
+}
+.achievement.unlocked {
+  border-color: var(--accent);
+  opacity: 1;
+}
+.achievement .icon {
+  width: 30px;
+  height: 30px;
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+.achievement h3 {
+  font-size: 13px;
+}
+.achievement p {
+  font-size: 10px;
+}
+.achievement .pill {
+  font-size: 8px;
+}
+.saved-item p {
+  font-size: 12px;
+}
+.history-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  text-decoration: none;
+}
+.history-list a:last-child {
+  border: 0;
+}
+.history-list small {
+  color: var(--muted);
+  font-size: 10px;
+  white-space: nowrap;
+}
+#lesson-feedback,
+#challenge-feedback {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.chips a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--accent);
+}
+@media (max-width: 1200px) {
+  .element-properties {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .taxonomy {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .achievement-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .organism-detail-head {
+    grid-template-columns: 1fr;
+  }
+  .organism-detail-head img {
+    width: 100%;
+  }
+  .taxonomy {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .element-properties {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .academy-banner {
+    align-items: start;
+    flex-direction: column;
+  }
+  .achievement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .route-grid {
+    grid-template-columns: 1fr;
+  }
+  .cell-scene {
+    height: 300px;
+  }
+  .comparison-bar {
+    align-items: start;
+    flex-direction: column;
+  }
+  .element-heading {
+    gap: 14px;
+  }
+  .element-heading h2 {
+    font-size: 26px;
+  }
+  .lab-result strong {
+    font-size: 35px;
+  }
+  .metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .element-properties {
+    grid-template-columns: 1fr;
+  }
+  .element-heading {
+    flex-wrap: wrap;
+  }
+  .taxonomy {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lesson-meta {
+    flex-wrap: wrap;
+  }
+  .metrics strong {
+    font-size: 17px;
+  }
+  .metrics > div {
+    padding: 9px;
+  }
+  .cell-hotspot {
+    width: 35px;
+    height: 35px;
+  }
+  .cell-hotspot[data-part='nucleus'] {
+    width: 53px;
+    height: 53px;
+  }
+  .lab-result {
+    flex-wrap: wrap;
+  }
+  .hero h1 {
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,528 @@
+[
+  {
+    "id": "replicacion",
+    "title": "Replicación: copiar con precisión",
+    "cat": "Genética",
+    "level": "Intermedio",
+    "time": 7,
+    "summary": "Relaciona complementariedad, antiparalelismo y síntesis semiconservativa.",
+    "parts": [
+      [
+        "Dos moldes, dos copias",
+        "Antes de una división, la doble hélice se abre y cada cadena sirve de molde. Cada molécula resultante contiene una cadena anterior y una recién sintetizada: por eso la replicación es semiconservativa. Este mecanismo conserva información, aunque la fidelidad nunca es absoluta."
+      ],
+      [
+        "Una dirección química",
+        "Las ADN polimerasas añaden nucleótidos al extremo 3′ y sintetizan en dirección 5′→3′. Como los moldes son antiparalelos, una cadena se copia de manera continua y la otra en fragmentos de Okazaki que después se unen. La primasa produce cebadores y la ligasa sella discontinuidades."
+      ],
+      [
+        "Revisión y reparación",
+        "Muchas polimerasas corrigen incorporaciones erróneas. Otros sistemas detectan daños o apareamientos incorrectos después de la síntesis. Una mutación que persiste puede transmitirse a células descendientes; no todos los cambios alteran una proteína ni todos tienen el mismo efecto."
+      ]
+    ],
+    "terms": ["ADN", "Replicación", "Nucleótido", "Mutación"],
+    "check": [
+      "¿Qué conserva cada molécula tras replicación semiconservativa?",
+      ["Dos cadenas nuevas", "Una cadena anterior y una nueva", "Solo ARN"],
+      1,
+      "Cada cadena anterior sirve de molde para una nueva complementaria."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication"
+  },
+  {
+    "id": "transcripcion",
+    "title": "Del ADN al ARN",
+    "cat": "Genética",
+    "level": "Intermedio",
+    "time": 6,
+    "summary": "Distingue cadena molde, cadena codificante y procesamiento de ARN.",
+    "parts": [
+      [
+        "Copiar un mensaje",
+        "La ARN polimerasa utiliza una cadena de ADN como molde y produce ARN complementario en dirección 5′→3′. La cadena codificante de ADN tiene la misma secuencia que el ARN, sustituyendo T por U, cuando ambas se escriben 5′→3′. Un promotor contribuye a definir dónde comienza la transcripción."
+      ],
+      [
+        "Varios tipos de ARN",
+        "El ARN mensajero puede llevar información para producir proteínas. El ARN ribosómico forma parte estructural y catalítica del ribosoma y el ARN de transferencia conecta codones con aminoácidos. También existen numerosos ARN reguladores que no se traducen."
+      ],
+      [
+        "Procesamiento eucariota",
+        "Muchos transcritos eucariotas reciben una caperuza 5′, una cola poli-A y corte y empalme. El empalme alternativo permite combinar exones de maneras diferentes. Por eso transcribir una región de ADN no implica necesariamente producir inmediatamente una proteína completa."
+      ]
+    ],
+    "terms": ["ARN", "Transcripción", "Gen", "Ribosoma"],
+    "check": [
+      "¿Qué secuencia corresponde al ARN de una cadena codificante ATGC escrita 5′→3′?",
+      ["UACG", "AUGC", "GCAT"],
+      1,
+      "El ARN coincide con la cadena codificante, cambiando timina por uracilo."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/15-2-prokaryotic-transcription"
+  },
+  {
+    "id": "traduccion",
+    "title": "Del ARN a una proteína",
+    "cat": "Genética",
+    "level": "Avanzado",
+    "time": 8,
+    "summary": "Lee codones y descubre el papel del ribosoma y los ARN de transferencia.",
+    "parts": [
+      [
+        "Tripletes con significado",
+        "El código genético relaciona codones del ARN con aminoácidos o señales de terminación. Hay 64 codones posibles y, en el código estándar, 61 especifican aminoácidos. Varios codones pueden corresponder al mismo aminoácido; esta redundancia no significa que un codón sea ambiguo."
+      ],
+      [
+        "El ribosoma",
+        "El ribosoma reúne ARN mensajero y ARN de transferencia. Los anticodones reconocen codones y los aminoácidos se enlazan formando una cadena. En el modelo introductorio, AUG inicia la traducción y UAA, UAG y UGA son señales de terminación. Hay excepciones biológicas a estas reglas generales."
+      ],
+      [
+        "Alcance del traductor",
+        "El traductor de BioData aplica el código estándar desde la primera base, en un marco definido. No identifica automáticamente genes, intrones ni sitios reales de inicio. Una secuencia traducible no demuestra la existencia de una proteína funcional: importan regulación, plegamiento y contexto celular."
+      ]
+    ],
+    "terms": ["Traducción", "Codón", "Proteína", "Ribosoma"],
+    "check": [
+      "¿Qué sucede al encontrar UGA en el código estándar?",
+      ["Se añade glucosa", "Se termina la traducción", "Se duplica el ADN"],
+      1,
+      "UGA es una señal de terminación en el código estándar."
+    ],
+    "source": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi"
+  },
+  {
+    "id": "mutaciones",
+    "title": "Mutaciones y variación genética",
+    "cat": "Genética",
+    "level": "Avanzado",
+    "time": 7,
+    "summary": "Examina sustituciones, inserciones y cambios de marco de lectura.",
+    "parts": [
+      [
+        "Cambios de secuencia",
+        "Una sustitución cambia una base; una inserción o deleción añade o retira nucleótidos. En regiones codificantes, las inserciones o deleciones cuya longitud no es múltiplo de tres pueden cambiar el marco de lectura. También existen alteraciones de segmentos cromosómicos completos."
+      ],
+      [
+        "El contexto importa",
+        "Una sustitución puede ser sinónima, cambiar un aminoácido o generar una señal de terminación. Los cambios fuera de regiones codificantes pueden afectar regulación. Sus consecuencias dependen del lugar, el tipo celular y el ambiente; no toda mutación produce una enfermedad."
+      ],
+      [
+        "Origen y herencia",
+        "Las mutaciones pueden surgir durante procesos celulares o por agentes que dañan el ADN. En animales, un cambio en la línea germinal puede transmitirse a descendientes; uno somático suele permanecer en el individuo. La selección actúa sobre variaciones heredables, sin que las mutaciones aparezcan para resolver una necesidad."
+      ]
+    ],
+    "terms": ["Mutación", "Codón", "Genotipo", "Selección natural"],
+    "check": [
+      "¿Qué inserción cambia el marco de una región codificante?",
+      ["Una base", "Tres bases", "Seis bases"],
+      0,
+      "Una base desplaza la agrupación de los codones posteriores."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+  },
+  {
+    "id": "herencia-compleja",
+    "title": "Más allá de la dominancia completa",
+    "cat": "Genética",
+    "level": "Avanzado",
+    "time": 7,
+    "summary": "Explora codominancia, dominancia incompleta y rasgos poligénicos.",
+    "parts": [
+      [
+        "Relaciones entre alelos",
+        "En dominancia incompleta, el heterocigoto muestra un fenotipo diferente de los dos homocigotos. En codominancia se detectan productos o características de ambos alelos, como A y B en el sistema ABO. Dominancia no significa superioridad, frecuencia ni ventaja evolutiva."
+      ],
+      [
+        "Muchos genes y ambiente",
+        "La estatura y muchos otros caracteres dependen de numerosos genes y factores ambientales. No es adecuado representarlos con un único cuadro de Punnett de dos alelos. La heredabilidad describe variación en una población y ambiente específicos, no el destino inmutable de una persona."
+      ],
+      [
+        "Probabilidades e independencia",
+        "La segregación de alelos permite calcular probabilidades. La distribución independiente se aplica a genes no ligados o suficientemente separados; genes cercanos en un cromosoma pueden heredarse juntos. Un resultado esperado del 25 % no garantiza un descendiente de cada cuatro en cada familia."
+      ]
+    ],
+    "terms": ["Alelo", "Fenotipo", "Genotipo", "Cromosoma"],
+    "check": [
+      "¿Qué describe la codominancia?",
+      [
+        "Un alelo elimina al otro",
+        "Se expresan características de ambos alelos",
+        "Todos los rasgos son intermedios"
+      ],
+      1,
+      "El heterocigoto expresa productos o características de ambos alelos."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits"
+  },
+  {
+    "id": "enzimas",
+    "title": "Enzimas: acelerar sin consumirse",
+    "cat": "Química",
+    "level": "Intermedio",
+    "time": 7,
+    "summary": "Relaciona sitios activos, saturación y velocidad de reacción.",
+    "parts": [
+      [
+        "Catalizadores biológicos",
+        "Las enzimas disminuyen la energía de activación de una reacción y facilitan que alcance el equilibrio con mayor rapidez. No cambian el balance energético global ni el equilibrio de la reacción. La mayoría son proteínas, pero también existen ARN catalíticos."
+      ],
+      [
+        "Saturación",
+        "Al aumentar sustrato, más sitios activos están ocupados. En condiciones apropiadas, el modelo de Michaelis–Menten relaciona velocidad con concentración mediante v = Vmax·[S]/(Km+[S]). Cuando [S] = Km, la velocidad es la mitad de Vmax. No todas las enzimas siguen este modelo."
+      ],
+      [
+        "Condiciones y regulación",
+        "La temperatura, el pH, los inhibidores y las modificaciones reguladoras pueden cambiar la actividad. Una temperatura mayor puede acelerar reacciones dentro de un intervalo y después reducir actividad por pérdida de estructura. Nunca se debe extrapolar una curva simple a cualquier condición."
+      ]
+    ],
+    "terms": ["Enzima", "Proteína", "Sustrato", "Metabolismo"],
+    "check": [
+      "En Michaelis–Menten, cuando [S] = Km, v es…",
+      ["Vmax", "Vmax/2", "Cero"],
+      1,
+      "Al sustituir [S] por Km, el denominador es 2·Km."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+  },
+  {
+    "id": "ph",
+    "title": "Agua, pH y amortiguadores",
+    "cat": "Química",
+    "level": "Intermedio",
+    "time": 6,
+    "summary": "Comprende una escala logarítmica y la estabilidad del medio celular.",
+    "parts": [
+      [
+        "La química del agua",
+        "La polaridad del agua permite interacciones de hidrógeno y favorece la disolución de numerosas sustancias iónicas o polares. También contribuye a su capacidad térmica. Las interacciones con el agua influyen en el ensamblaje de membranas y el plegamiento de proteínas."
+      ],
+      [
+        "Una escala logarítmica",
+        "El pH se relaciona con la actividad de iones hidrógeno mediante un logaritmo negativo. En la aproximación diluida escolar, bajar una unidad implica multiplicar por diez su concentración. La neutralidad corresponde a igual actividad de H⁺ y OH⁻; pH 7 es el valor aproximado a 25 °C, no a toda temperatura."
+      ],
+      [
+        "Amortiguar cambios",
+        "Un sistema amortiguador contiene componentes que pueden aceptar o liberar protones. Reduce variaciones de pH dentro de un intervalo limitado. El sistema bicarbonato contribuye al equilibrio ácido-base del organismo; la regulación completa también requiere pulmones y riñones."
+      ]
+    ],
+    "terms": ["pH", "Polaridad", "Agua", "Homeostasis"],
+    "check": [
+      "En la aproximación escolar, bajar de pH 6 a 5 multiplica [H⁺] por…",
+      ["2", "10", "100"],
+      1,
+      "Una unidad corresponde a un factor de diez."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/2-2-water"
+  },
+  {
+    "id": "enlaces",
+    "title": "Enlaces y fuerzas de la vida",
+    "cat": "Química",
+    "level": "Esencial",
+    "time": 6,
+    "summary": "Distingue enlaces covalentes, interacciones iónicas y puentes de hidrógeno.",
+    "parts": [
+      [
+        "Compartir electrones",
+        "En un enlace covalente, los átomos comparten electrones. La distribución puede ser desigual y producir enlaces polares. Las cadenas de carbono forman estructuras variadas y grupos funcionales que cambian solubilidad y reactividad de las moléculas biológicas."
+      ],
+      [
+        "Carga e interacciones",
+        "Los iones tienen carga neta por pérdida o ganancia de electrones. Las atracciones electrostáticas influyen en sales y macromoléculas, pero el agua modifica su intensidad. Un puente de hidrógeno es una interacción específica que ayuda a estabilizar estructuras sin equivaler a un enlace covalente entre las mismas moléculas."
+      ],
+      [
+        "Estructura y función",
+        "Los enlaces covalentes sostienen la cadena de una proteína, mientras diversas interacciones contribuyen a su forma tridimensional. Romper estas interacciones puede alterar la función. La secuencia, el ambiente y las ayudas celulares participan en alcanzar una conformación funcional."
+      ]
+    ],
+    "terms": ["Enlace covalente", "Ion", "Polaridad", "Proteína"],
+    "check": [
+      "¿Qué caracteriza un enlace covalente?",
+      ["Compartición de electrones", "Ausencia de electrones", "Fusión de núcleos"],
+      0,
+      "Los electrones se comparten entre los átomos enlazados."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/2-1-atoms-isotopes-ions-and-molecules-the-building-blocks"
+  },
+  {
+    "id": "poblaciones",
+    "title": "Poblaciones y límites de crecimiento",
+    "cat": "Ecología",
+    "level": "Intermedio",
+    "time": 7,
+    "summary": "Compara crecimiento exponencial y logístico sin confundir modelos con predicciones.",
+    "parts": [
+      [
+        "Cambios de abundancia",
+        "El número de individuos depende de nacimientos, muertes, inmigración y emigración. Una tasa per cápita positiva puede producir crecimiento exponencial si no cambian los recursos ni las condiciones. En la naturaleza, estas condiciones rara vez se mantienen indefinidamente."
+      ],
+      [
+        "Capacidad de carga",
+        "El modelo logístico añade un factor dependiente de la densidad: dN/dt = rN(1−N/K). K representa una capacidad de carga idealizada y r una tasa intrínseca. Si 0 < N < K, la población se aproxima a K; por encima de K el modelo predice descenso hacia ese valor."
+      ],
+      [
+        "Usar el modelo con criterio",
+        "La capacidad de carga puede variar con estaciones y recursos. El modelo simple no incluye estructura por edades, azar, retrasos ni migraciones. Su utilidad aquí es explorar cómo los supuestos afectan una curva, no pronosticar la población de una especie concreta."
+      ]
+    ],
+    "terms": ["Población", "Capacidad de carga", "Ecosistema", "Modelo científico"],
+    "check": [
+      "En el modelo logístico, cuando N = K…",
+      ["La tasa neta es cero", "El crecimiento es infinito", "Desaparece la población"],
+      0,
+      "El factor 1−N/K vale cero."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth"
+  },
+  {
+    "id": "evolucion",
+    "title": "Evolución por selección natural",
+    "cat": "Biología",
+    "level": "Intermedio",
+    "time": 7,
+    "summary": "Conecta variación heredable con diferencias en éxito reproductivo.",
+    "parts": [
+      [
+        "Una población cambia",
+        "La evolución implica cambios heredables en poblaciones a lo largo de generaciones. La selección natural ocurre cuando variaciones heredables se relacionan con diferencias en reproducción. Los individuos sobreviven y se reproducen; las poblaciones evolucionan."
+      ],
+      [
+        "Adaptación y ambiente",
+        "Una característica puede resultar ventajosa en un ambiente y costosa en otro. La selección no persigue perfección ni anticipa necesidades futuras. La resistencia a un antibiótico puede aumentar cuando variantes resistentes dejan más descendencia bajo tratamiento; las bacterias no deciden volverse resistentes."
+      ],
+      [
+        "Otros mecanismos",
+        "La deriva genética cambia frecuencias por azar y puede ser intensa en poblaciones pequeñas. El flujo génico mueve variantes entre poblaciones y las mutaciones introducen nuevas variaciones. Reconstruir historias evolutivas requiere comparar evidencia molecular, fósiles y características."
+      ]
+    ],
+    "terms": ["Selección natural", "Mutación", "Población", "Filogenia"],
+    "check": [
+      "¿Qué condición necesita la selección natural?",
+      [
+        "Variación heredable ligada a reproducción",
+        "Una decisión del organismo",
+        "Ausencia de diferencias"
+      ],
+      0,
+      "Las variantes heredables deben diferir en éxito reproductivo en ese contexto."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution"
+  },
+  {
+    "id": "bacterias",
+    "title": "Bacterias: diversidad microscópica",
+    "cat": "Biología",
+    "level": "Esencial",
+    "time": 6,
+    "summary": "Explora nucleoides, metabolismo y funciones ecológicas bacterianas.",
+    "parts": [
+      [
+        "Organización procariota",
+        "Las bacterias poseen membrana, citoplasma, ribosomas y ADN en una región sin envoltura nuclear. Muchas tienen pared con peptidoglucano, pero existen excepciones. Sus tamaños y formas son diversos, y algunas construyen colonias o asociaciones complejas."
+      ],
+      [
+        "Más que patógenos",
+        "Numerosas bacterias participan en reciclaje de nutrientes, fotosíntesis, fijación de nitrógeno y fermentaciones. Otras forman microbiotas de plantas y animales. El efecto sobre un hospedador depende de especie, cepa, lugar y condiciones; no es correcto dividirlas solo en buenas y malas."
+      ],
+      [
+        "Multiplicación y transferencia",
+        "La fisión binaria produce descendientes celulares. La transferencia horizontal permite intercambiar material genético por mecanismos como conjugación, transformación y transducción. Este intercambio no equivale a reproducción sexual con meiosis y fecundación."
+      ]
+    ],
+    "terms": ["Procariota", "Nucleoide", "Ribosoma", "Microbiota"],
+    "check": [
+      "¿Dónde se localiza el cromosoma bacteriano?",
+      ["En un núcleo membranoso", "En el nucleoide", "En una mitocondria"],
+      1,
+      "La región nucleoide no está encerrada por una envoltura nuclear."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/22-2-structure-of-prokaryotes-bacteria-and-archaea"
+  },
+  {
+    "id": "arqueas",
+    "title": "Arqueas: otro dominio de la vida",
+    "cat": "Biología",
+    "level": "Intermedio",
+    "time": 6,
+    "summary": "Distingue arqueas y bacterias y evita el mito de que todas son extremófilas.",
+    "parts": [
+      [
+        "Un linaje distinto",
+        "Las arqueas son procariotas, pero difieren de bacterias en rasgos moleculares, membranas y maquinaria de expresión génica. Sus lípidos incluyen enlaces éter y sus paredes no contienen el peptidoglucano típico bacteriano. Compartir un tamaño pequeño no implica pertenecer al mismo dominio."
+      ],
+      [
+        "Distribución amplia",
+        "Hay arqueas en ambientes calientes o salinos, pero también en océanos, suelos y microbiotas. Algunas producen metano bajo condiciones anaerobias; otras participan en oxidación de amoníaco. No todas son metanógenas ni todas viven en extremos ambientales."
+      ],
+      [
+        "Clasificar con evidencia",
+        "La comparación de secuencias reveló grandes diferencias entre linajes. Las relaciones profundas y los nombres de filos continúan revisándose. BioData indica cuando utiliza agrupaciones tradicionales, para no confundir una clasificación didáctica con una jerarquía definitiva."
+      ]
+    ],
+    "terms": ["Arquea", "Procariota", "Filogenia", "Metabolismo"],
+    "check": [
+      "¿Qué afirmación sobre las arqueas es correcta?",
+      ["Todas viven en volcanes", "También habitan suelos y océanos", "Son células animales"],
+      1,
+      "Las arqueas ocupan ambientes extremos y numerosos ambientes comunes."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/22-2-structure-of-prokaryotes-bacteria-and-archaea"
+  },
+  {
+    "id": "hongos",
+    "title": "Hongos y reciclaje de nutrientes",
+    "cat": "Biología",
+    "level": "Esencial",
+    "time": 6,
+    "summary": "Diferencia micelio, esporas y nutrición por absorción.",
+    "parts": [
+      [
+        "Una organización propia",
+        "Los hongos son eucariotas heterótrofos. Muchos forman hifas que, en conjunto, constituyen un micelio; las levaduras suelen ser unicelulares. Sus paredes contienen quitina y otros componentes. Una seta es una estructura reproductora y no representa todo el organismo."
+      ],
+      [
+        "Digestión externa",
+        "Los hongos liberan enzimas al sustrato y absorben productos solubles. Los descomponedores transforman restos y reciclan nutrientes. Otros hongos son parásitos o forman asociaciones mutualistas, como muchas micorrizas entre raíces y hongos."
+      ],
+      [
+        "Reproducción y usos",
+        "Existen ciclos sexuales y asexuales con esporas de distintos tipos. Algunas especies participan en fermentación, alimentación y producción de sustancias de interés. Identificar una especie comestible requiere conocimientos especializados; una ilustración educativa no permite determinar seguridad de consumo."
+      ]
+    ],
+    "terms": ["Hongo", "Espora", "Enzima", "Descomponedor"],
+    "check": [
+      "¿Cómo obtienen nutrientes los hongos?",
+      [
+        "Por absorción tras digestión externa",
+        "Siempre mediante fotosíntesis",
+        "Sin intercambio de materia"
+      ],
+      0,
+      "La digestión extracelular libera moléculas que pueden absorber."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi"
+  },
+  {
+    "id": "protistas",
+    "title": "Protistas: muchas formas de ser eucariota",
+    "cat": "Biología",
+    "level": "Intermedio",
+    "time": 6,
+    "summary": "Explora eucariotas microscópicos sin tratarlos como un solo linaje natural.",
+    "parts": [
+      [
+        "Una agrupación práctica",
+        "El término protista reúne muchos eucariotas que no se clasifican como animales, plantas u hongos en un esquema convencional. No es un único grupo que incluya todos los descendientes de un ancestro común. Los linajes son muy diversos y su clasificación cambia con evidencia molecular."
+      ],
+      [
+        "Formas de vida",
+        "Existen organismos fotosintéticos, consumidores de partículas y formas mixótrofas. Cilios, flagelos y pseudópodos permiten movimiento en distintos grupos. Las diatomeas y otros integrantes del fitoplancton contribuyen a la producción primaria acuática."
+      ],
+      [
+        "Interacciones y ambiente",
+        "Algunos protistas son simbiontes, otros depredan microorganismos y algunos causan enfermedades. No es correcto atribuir a todos un mismo hábitat o nutrición. Comparar Euglena, Paramecium y Amoeba permite reconocer diferencias incluso entre organismos unicelulares."
+      ]
+    ],
+    "terms": ["Eucariota", "Protista", "Fotosíntesis", "Filogenia"],
+    "check": [
+      "¿Qué describe mejor el término protista?",
+      [
+        "Un único linaje sin excepciones",
+        "Una agrupación didáctica de eucariotas diversos",
+        "Solo bacterias fotosintéticas"
+      ],
+      1,
+      "Reúne linajes eucariotas diversos y no forma un solo grupo natural."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins"
+  },
+  {
+    "id": "plantas",
+    "title": "Plantas, tejidos y vida terrestre",
+    "cat": "Biología",
+    "level": "Intermedio",
+    "time": 7,
+    "summary": "Conecta transporte, intercambio gaseoso y reproducción vegetal.",
+    "parts": [
+      [
+        "Captar y transportar",
+        "Las raíces absorben agua y minerales; el xilema los transporta principalmente hacia partes aéreas. El floema distribuye azúcares y otras sustancias desde órganos fuente hacia sumideros. La dirección del transporte en floema depende de estas relaciones, no de una regla única de arriba hacia abajo."
+      ],
+      [
+        "Regular el intercambio",
+        "Los estomas permiten intercambio gaseoso y contribuyen a regular pérdida de agua. Cerrar estomas reduce deshidratación, pero también puede limitar entrada de CO₂. Las plantas C4 y CAM presentan estrategias de concentración o separación temporal de la fijación de carbono."
+      ],
+      [
+        "Ciclos reproductivos",
+        "Las plantas alternan generaciones haploides y diploides. Los musgos, helechos y plantas con semillas presentan diferencias en estructuras dominantes y dependencia del agua. Las flores, frutos y semillas son innovaciones que cambian dispersión y reproducción en angiospermas."
+      ]
+    ],
+    "terms": ["Fotosíntesis", "Ósmosis", "Haploide", "Diploide"],
+    "check": [
+      "¿Qué tejido transporta principalmente agua y minerales?",
+      ["Floema", "Xilema", "Epidermis animal"],
+      1,
+      "El xilema conduce agua y minerales desde las raíces."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants"
+  },
+  {
+    "id": "homeostasis",
+    "title": "Homeostasis y retroalimentación",
+    "cat": "Biología",
+    "level": "Intermedio",
+    "time": 6,
+    "summary": "Comprende cómo se mantienen variables dentro de intervalos funcionales.",
+    "parts": [
+      [
+        "Un equilibrio dinámico",
+        "La homeostasis mantiene condiciones internas compatibles con la vida mediante cambios continuos. No significa inmovilidad ni un valor perfecto constante. Temperatura, concentración de solutos y disponibilidad energética varían dentro de intervalos y dependen de múltiples mecanismos."
+      ],
+      [
+        "Retroalimentación negativa",
+        "En un circuito regulador, un sensor detecta una variable y los efectores modifican su estado. La retroalimentación negativa contrarresta una desviación. La termorregulación humana combina respuestas como sudoración, cambios circulatorios y conducta; sus límites dependen del entorno."
+      ],
+      [
+        "Escalas conectadas",
+        "Las membranas celulares mantienen gradientes y los organismos coordinan órganos y sistemas. Un mecanismo positivo amplifica un proceso, como ciertas fases del parto, y requiere condiciones que lo detengan. No todos los circuitos biológicos se reducen a un termostato simple."
+      ]
+    ],
+    "terms": ["Homeostasis", "Membrana plasmática", "Gradiente", "Modelo científico"],
+    "check": [
+      "La retroalimentación negativa tiende a…",
+      ["Amplificar cualquier cambio", "Contrarrestar una desviación", "Eliminar los sensores"],
+      1,
+      "Actúa en sentido opuesto a la desviación detectada."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/33-3-homeostasis"
+  },
+  {
+    "id": "experimentos",
+    "title": "Diseñar un experimento interpretable",
+    "cat": "Método científico",
+    "level": "Avanzado",
+    "time": 7,
+    "summary": "Elige variables, controles y repeticiones que permitan evaluar una hipótesis.",
+    "parts": [
+      [
+        "De pregunta a procedimiento",
+        "Una hipótesis debe generar resultados contrastables. La variable independiente es la que se manipula y la dependiente es la respuesta medida. Controlar otras condiciones reduce explicaciones alternativas; también hay investigaciones observacionales donde no se manipulan variables."
+      ],
+      [
+        "Controles y replicación",
+        "Un grupo control ofrece una comparación pertinente. Repetir mediciones técnicas ayuda a estimar error de medición, mientras unidades biológicas independientes permiten evaluar variación entre individuos. Medir veinte veces una sola planta no equivale a estudiar veinte plantas independientes."
+      ],
+      [
+        "Interpretar incertidumbre",
+        "Un resultado inesperado puede mostrar un problema de procedimiento o aportar evidencia contra la hipótesis. Correlación por sí sola no establece causalidad. Comunicar tamaño de muestra, variación y límites hace que una conclusión sea más evaluable que una afirmación absoluta sin datos."
+      ]
+    ],
+    "terms": ["Hipótesis", "Variable", "Evidencia", "Modelo científico"],
+    "check": [
+      "¿Cuál es la variable dependiente?",
+      ["La respuesta que se mide", "La etiqueta del laboratorio", "Siempre la temperatura"],
+      0,
+      "Es el resultado medido para evaluar la relación estudiada."
+    ],
+    "source": "https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology"
+  }
+]
